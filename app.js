@@ -27,7 +27,7 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && lo
 
 window.sr = ScrollReveal();
 sr.reveal('.navbar', {
-duration: 3600,
+duration: 3000,
 origin: 'left'
 });
 window.sr = ScrollReveal();
@@ -38,38 +38,37 @@ distance: '300px'
 });
 window.sr = ScrollReveal();
 sr.reveal('.scrollH', {
-delay: 1300,
 duration: 2000,
 origin: 'top',
 distance: '300px'
 });
 window.sr = ScrollReveal();
 sr.reveal('#about', {
-duration: 2000,
+duration: 1000,
 origin: 'bottom',
 distance: '300px',
 viewFactor: 0.2
 });
 sr.reveal('#services', {
-duration: 2000,
+duration: 1000,
 origin: 'bottom',
 distance: '300px',
 viewFactor: 0.2
 });
 sr.reveal('.infoL', {
-duration: 2000,
+duration: 1000,
 origin: 'left',
 distance: '150px',
 viewFactor: 0.2
 });
 sr.reveal('.infoR', {
-duration: 2000,
+duration: 1000,
 origin: 'right',
 distance: '150px',
 viewFactor: 0.2
 });
 sr.reveal('#portfolio', {
-duration: 2000,
+duration: 1000,
 origin: 'bottom',
 distance: '150px',
 viewFactor: 0.2
