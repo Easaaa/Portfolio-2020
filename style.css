@@ -130,6 +130,10 @@ header button {
 #portfolio a {
    background: #A239CA;
 }
+
+#portfolio .text-intro {
+  margin-bottom: 30px;
+}
  /* ------------------------------------------------------- */
 
 .imgCont {
