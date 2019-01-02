@@ -58,6 +58,13 @@ header button {
   background: transparent;
 }
 
+
+@media (max-width: 640px) {
+  header .social-icon {
+    display: none;
+  }
+}
+
 /* ABOUT */
 
 #about {
@@ -176,7 +183,7 @@ header button {
 .text {
   color: white;
   position: absolute;
-  font-family: 'Courier New', Courier, monospace;
+  
   top: 70%;
   left: 50%;
   transform: translate(-50%,-50%);
