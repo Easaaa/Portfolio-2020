@@ -30,12 +30,24 @@ sr.reveal('.navbar', {
 duration: 3000,
 origin: 'left'
 });
-window.sr = ScrollReveal();
-sr.reveal('.masterH', {
-duration: 2000,
-origin: 'top',
-distance: '300px'
+sr.reveal('.title-effect-left', {
+duration: 1000,
+origin: 'left',
+distance: '150px',
+viewFactor: 0.2
 });
+sr.reveal('.title-effect-right', {
+duration: 1300,
+origin: 'right',
+distance: '170px',
+viewFactor: 0.2
+});
+sr.reveal('.title-effect-left2', {
+  duration: 1500,
+  origin: 'left',
+  distance: '190px',
+  viewFactor: 0.2
+  });
 window.sr = ScrollReveal();
 sr.reveal('.scrollH', {
 duration: 2000,
