@@ -70,6 +70,12 @@ header a{
 
 #about {
   background-color: rgb(26, 21, 40);
+  grid-template-areas: 
+      "img"
+      "text";
+  grid-gap: 10px;
+  text-align: center;
+  padding: 20px 20px;
 }
 
 #about img {
@@ -95,19 +101,39 @@ header a{
   font-weight: 100;
   line-height: 2;
   text-size-adjust: auto;
+  margin: 0 auto;
+  width: 80%;
 } 
 
-@media (max-width: 640px) {
-  #about p {
-    text-rendering: auto;
-    margin: auto -75px auto -75px;
-  }
-}
 
 /* SERVICES */
 
 #services {
-  margin-top: -30px;
+padding-top: 20px;
+}
+
+.services {
+  display: grid;
+  grid-template-areas: 
+     "box box box box";
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.services p {
+  margin: 15px;
+}
+
+.service {
+  padding-top: 20px;
+}
+
+.service:hover {
+  background: rgb(26, 21, 40);
+}
+
+.title {
+  text-align: center;
 }
 
 #services h2 {
@@ -118,6 +144,24 @@ header a{
 
 #services h3 {
   color: #A239CA;
+}
+
+@media screen and (max-width: 976px) {
+  .services {
+    grid-template-areas: 
+       "box box"
+       "box box";
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .services {
+    grid-template-areas: 
+       "box" 
+       "box"
+       "box" 
+       "box";
+  }
 }
 
 /* PORTFOLIO */
