@@ -438,17 +438,15 @@ header a{
 /* SKILLS PAGE */
 
 .progress-section {
-  display: grid;
-  grid-template-areas:
-     "text skill";
-  padding-top: 100px;
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  padding-bottom: 80px;
+  background: rgb(30, 23, 46);
 }
 
 .text-skill {
-  width: 500px;
+  width: 80%;
   margin: 60px auto;
   padding: 0;
   font-size: 20px;
@@ -460,7 +458,7 @@ header a{
 }
 
 .skill {
-  width: 500px;
+  width: 60%;
   margin: 60px auto;
   padding: 0;
   list-style: none;
@@ -475,7 +473,8 @@ header a{
 }
 
 .skill li {
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .bar-progress {
@@ -493,6 +492,8 @@ header a{
   float: left;
   background: #A239CA;
 }
+
+
 
 .html {
   width: 85%;
@@ -536,18 +537,31 @@ header a{
   }
 }
 
+.lessons {
+  padding-top: 30px;
+}
+
 .lessons ul {
   list-style: none;
   text-align: center;
+  margin-right: 30px;
+}
+
+.lessons .past span {
+  color: green;
+}
+
+.lessons .future span {
+  color: red;
 }
 
 .lessons h1 {
   background: #A239CA;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   border-radius: 55px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 400px;
+  margin-right: 400px;
   font-size: 2.2rem;
   font-weight: 200;
   text-transform: uppercase;
@@ -559,9 +573,26 @@ header a{
        "text"
        "skill";
   }
+  .lessons h1 {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
 
+@media (max-width: 958px){
+  .lessons h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
+.studying {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  padding-bottom: 300px;
+  padding-top: 30px;
+  grid-gap: 40px;
+}
 
 
 /* FOOTER */
