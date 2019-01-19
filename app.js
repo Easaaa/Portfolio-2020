@@ -22,6 +22,16 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && lo
 });
 });
 
+// COPY BTN
+
+function copyToClipboard(element) {
+  var $temp = $("<button>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
 
 // EFFECT PAGE
 

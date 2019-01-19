@@ -5,8 +5,8 @@ body, html {
 
 body {
   font-family: 'Ubuntu Mono', monospace;
-  background-color: #0E0B16;  
-  color: #E7DFDD;
+  background-color: whitesmoke;  
+  color: #0E0B16;
 }
 
 /* NAVBAR */
@@ -15,10 +15,12 @@ body {
   font-size: 1.5rem;
   font-weight: 100;    
   border-bottom: 1px solid #A239CA;
+  background: #0E0B16;
 }
 
 #mainNavbar .nav-link {
-  color: #E7DFDD;
+  color: whitesmoke;
+  font-weight: 200px;
 }
 
 #mainNavbar .nav-link:hover {
@@ -46,6 +48,7 @@ header {
   background-size: cover;
   font-size: 3rem;
   text-align: center;
+  color: #0E0B16;
 }
 
 @media (max-width: 800px) {
@@ -57,6 +60,7 @@ header {
 header a{
   cursor: pointer;
   font-size: 22px;
+  color: #0E0B16;
 }
 
 
@@ -76,6 +80,7 @@ header a{
   grid-gap: 10px;
   text-align: center;
   padding: 20px 20px;
+  color: white;
 }
 
 #about img {
@@ -124,12 +129,16 @@ padding-top: 20px;
   margin: 15px;
 }
 
+.service i {
+  color: #A239CA;
+}
+
 .service {
   padding-top: 20px;
 }
 
 .service:hover {
-  background: rgb(26, 21, 40);
+  background: #f1f1f1;
 }
 
 .title {
@@ -170,6 +179,7 @@ padding-top: 20px;
   background-color: rgb(26, 21, 40);
   margin-top: 150px;
   padding-bottom: 150px;
+  color: white;
 }
 
 #portfolio h2 {
@@ -246,11 +256,11 @@ padding-top: 20px;
 
 .text-project button {
   background: #A239CA;
-  color: white;
+  color: whitesmoke;
 }
 
 .text-project button:hover {
-  background: white;
+  background: whitesmoke;
   color: #A239CA;
 }
 
@@ -278,12 +288,12 @@ padding-top: 20px;
        "ptf"
        "ptf"
        "ptf";
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 }
 
 @media (max-width: 480px) {
-  #portfolio p {
+  .text-project p {
     display: none;
   }
   .ptf-project {
@@ -295,7 +305,7 @@ padding-top: 20px;
 
 
 .text-project hr {
-  border-top: 1px solid white;
+  border-top: 1px solid whitesmoke;
 }  
 
 /* -------------------------------------------------- */
@@ -312,26 +322,35 @@ padding-top: 20px;
   transform: scale(1.2);
 }
 
-/* CONTACT */
+/* contacts */
 
-#contact label {
+#contacts {
+  justify-content: center;
+  text-align: center;
+}
+
+#contacts h2 {
   color: #A239CA;
 }
 
-#contact input {
-  background: #0E0B16;
+#contacts button {
+  background: #f7dcf8cc;
+  color: #0E0B16 ;
+  border: none;
+  border-radius: 15px;
+  
+  padding: 10px;
+  text-align: center;
 }
 
-#contact textarea {
-  background: #0E0B16;
+#contacts button:hover {
+  background: #A239CA;
+  transition: all 0.5s;
+  color: whitesmoke;
 }
 
-#contact ::placeholder {
-  color: white;
-}
-
-#sendBtn {
-  color: #A239CA;
+.infoL {
+  margin: 0 100px 0 100px;
 }
 
 .social-icon {
@@ -344,7 +363,7 @@ padding-top: 20px;
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: #f1f1f1; 
+  background: #f7dcf8cc; 
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #dcd9d970;
@@ -361,13 +380,13 @@ padding-top: 20px;
 
 @media screen and (max-width: 700px) {
   .social-icon {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .social-icon {
-    margin-top: 110px;
+    margin-top: 200px;
   }
 }
 
@@ -410,6 +429,10 @@ padding-top: 20px;
 
 footer {
   font-size: 12px;
+  background: #0E0B16;
+  color: whitesmoke;
+  width: 100%;
+  margin-bottom: -20px;
 }
 
 footer hr {
@@ -436,7 +459,7 @@ i {
 }
 
 a {
-  color: white;
+  color: whitesmoke;
 }
 
 a i:hover {
