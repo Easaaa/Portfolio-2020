@@ -113,6 +113,29 @@ header a{
   width: 80%;
 } 
 
+/* SKILLS BTN */
+
+.skills-btn {
+  background: white;
+  padding: 20px;
+}
+
+.skills-btn a h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  color: #A239CA;
+}
+
+.skills-btn a h2:hover {
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.skills-btn a {
+  cursor: pointer;
+  text-decoration: none;
+}
 
 /* SERVICES */
 
