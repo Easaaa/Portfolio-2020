@@ -79,7 +79,7 @@ header a{
       "text";
   grid-gap: 10px;
   text-align: center;
-  padding: 20px 20px;
+  padding: 100px 20px;
   color: white;
 }
 
@@ -114,7 +114,7 @@ header a{
 /* SERVICES */
 
 #services {
-padding-top: 20px;
+  padding: 50px 20px;
 }
 
 .services {
@@ -178,7 +178,7 @@ padding-top: 20px;
 #portfolio {
   background-color: rgb(26, 21, 40);
   margin-top: 150px;
-  padding-bottom: 150px;
+  padding: 50px 100px;
   color: white;
 }
 
@@ -327,6 +327,7 @@ padding-top: 20px;
 #contacts {
   justify-content: center;
   text-align: center;
+  padding-top: 50px;
 }
 
 #contacts h2 {
