@@ -551,6 +551,10 @@ header a{
   color: green;
 }
 
+.lessons p {
+  text-align: center;
+}
+
 .lessons h1 {
   background: #A239CA;
   padding: 15px;
