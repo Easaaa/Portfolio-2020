@@ -1,12 +1,11 @@
 body, html {
-  max-width: 100%;
   overflow-x: hidden;
 }
 
 body {
   font-family: 'Ubuntu Mono', monospace;
-  background-color: whitesmoke;  
-  color: #0E0B16;
+  background-color: #0E0B16;  
+  color: whitesmoke;
 }
 
 /* NAVBAR */
@@ -48,19 +47,23 @@ header {
   background-size: cover;
   font-size: 3rem;
   text-align: center;
-  color: #0E0B16;
+  background: #0E0B16; 
+}
+
+header h1 span {
+  color: #A239CA;
 }
 
 @media (max-width: 800px) {
   header {
-    margin-top: -80px
+    margin-top: -80px;
   }
 }
 
 header a{
   cursor: pointer;
   font-size: 22px;
-  color: #0E0B16;
+  color: white;
 }
 
 
@@ -73,7 +76,7 @@ header a{
 /* ABOUT */
 
 #about {
-  background-color: rgb(26, 21, 40);
+  background-color: rgb(30, 23, 46);
   grid-template-areas: 
       "img"
       "text";
@@ -115,6 +118,7 @@ header a{
 
 #services {
   padding: 50px 20px;
+  background:#0E0B16 ;
 }
 
 .services {
@@ -138,7 +142,7 @@ header a{
 }
 
 .service:hover {
-  background: #f1f1f1;
+  background: rgb(30, 23, 46);
 }
 
 .title {
@@ -176,15 +180,17 @@ header a{
 /* PORTFOLIO */
 
 #portfolio {
-  background-color: rgb(26, 21, 40);
-  margin-top: 150px;
-  padding: 50px 100px;
+  background-color: rgb(30, 23, 46);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
 }
 
 #portfolio h2 {
   color: #A239CA;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -297,11 +303,9 @@ header a{
     display: none;
   }
   .ptf-project {
-    padding: 0 20px 0 20px;
+    padding: 2px 2px;
   }
 }
-
-
 
 
 .text-project hr {
@@ -328,30 +332,12 @@ header a{
   justify-content: center;
   text-align: center;
   padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #contacts h2 {
   color: #A239CA;
-}
-
-#contacts button {
-  background: #f7dcf8cc;
-  color: #0E0B16 ;
-  border: none;
-  border-radius: 15px;
-  
-  padding: 10px;
-  text-align: center;
-}
-
-#contacts button:hover {
-  background: #A239CA;
-  transition: all 0.5s;
-  color: whitesmoke;
-}
-
-.infoL {
-  margin: 0 100px 0 100px;
 }
 
 .social-icon {
@@ -364,7 +350,7 @@ header a{
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: #f7dcf8cc; 
+  background: white; 
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #dcd9d970;
@@ -387,7 +373,7 @@ header a{
 
 @media screen and (max-width: 400px) {
   .social-icon {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 }
 
@@ -426,19 +412,146 @@ header a{
   }
 }
 
+/* SKILLS PAGE */
+
+.progress-section {
+  display: grid;
+  grid-template-areas:
+     "text skill";
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.text-skill {
+  width: 500px;
+  margin: 60px auto;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text-skill p {
+  margin-top: 50px;
+}
+
+.skill {
+  width: 500px;
+  margin: 60px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.progress-section h1 {
+  color: #A239CA;
+  font-size: 2.2rem;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill li {
+  margin: 20px;
+}
+
+.bar-progress {
+  background: white;
+  display: block;
+  height: 6px;
+  border: 1px solid;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #A239CA;
+}
+
+.bar-progress span {
+  height: 40px;
+  float: left;
+  background: #A239CA;
+}
+
+.html {
+  width: 85%;
+  animation: html 2s;
+}
+
+.css {
+  width: 75%;
+  animation: css 2s;
+}
+
+.javascript {
+  width: 40%;
+  animation: javascript 2s;
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+.lessons ul {
+  list-style: none;
+  text-align: center;
+}
+
+.lessons h1 {
+  background: #A239CA;
+  padding: 20px;
+  text-align: center;
+  border-radius: 55px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 2.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1255px){
+  .progress-section {
+    grid-template-areas:
+       "text"
+       "skill";
+  }
+}
+
+
+
+
 /* FOOTER */
 
 footer {
   font-size: 12px;
-  background: #0E0B16;
   color: whitesmoke;
   width: 100%;
-  margin-bottom: -20px;
-}
-
-footer hr {
+  background: #0E0B16;
   border-top: 1px solid #A239CA;
 }
+
+
 
 .landing h2 {
   font-size: 2.2rem;
@@ -451,7 +564,7 @@ footer hr {
 }
 
 h1 span {
-  color: #A239CA;
+  color: whitesmoke;
 }
 
 i {
