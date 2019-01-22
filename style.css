@@ -164,10 +164,6 @@ header a{
   padding-top: 20px;
 }
 
-.service:hover {
-  background: rgb(30, 23, 46);
-}
-
 .title {
   text-align: center;
 }
@@ -262,9 +258,9 @@ header a{
 
 .overlay {
   position: absolute;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
   opacity: 0;
-  background-color:rgba(26, 21, 40, 0.88);
+  background-color:rgb(30, 23, 46);
 } 
 
 .imgCont:hover .overlay {
@@ -592,6 +588,8 @@ header a{
   padding-bottom: 300px;
   padding-top: 30px;
   grid-gap: 40px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 
