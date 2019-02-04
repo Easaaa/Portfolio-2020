@@ -41,8 +41,7 @@ body {
 /* HEADER */
 
 header {
-  margin-top: 80px;
-  padding-top: 10rem;
+  padding: 150px 0 50px 0;
   background-position: center center;
   background-size: cover;
   font-size: 3rem;
