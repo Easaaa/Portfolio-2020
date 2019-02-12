@@ -179,16 +179,27 @@ header a{
 #company {
   text-align: center;
   padding-bottom: 30px;
+  margin-top: 15px;
 }
 
 #company img {
-  max-width: 300px;
+  max-width: 250px;
+}
+
+#company img:hover {
+  background: rgb(30, 23, 46);
+  border-radius: 50%;
+  transition: 0.5 ease-out;
 }
 
 #company h1 {
   color: #A239CA;
   font-size: 2.2rem;
   font-weight: 100;
+}
+
+#company p {
+  padding: 10px;
 }
 
 /* PORTFOLIO */
