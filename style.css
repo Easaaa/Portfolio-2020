@@ -41,12 +41,11 @@ body {
 /* HEADER */
 
 header {
-  padding: 150px 0 50px 0;
+  padding: 150px 0 40px 0;
   background-position: center center;
   background-size: cover;
   font-size: 3rem;
   text-align: center;
-  background-color: rgb(30, 23, 46); 
 }
 
 header h1 {
@@ -77,16 +76,27 @@ header a{
   }
 }
 
+.border-dark {
+  border: 1px solid rgb(30, 23, 46);
+  margin: 0 30px 0 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .border-dark {
+    margin: 0 200px 0 200px;
+  }
+}
+
 /* ABOUT */
 
 #about {
-  background-color: rgb(30, 23, 46);
+  /* background-color: rgb(30, 23, 46); */
   grid-template-areas: 
       "img"
       "text";
   grid-gap: 10px;
   text-align: center;
-  padding: 100px 20px;
+  padding: 20px 20px;
   color: white;
 }
 
@@ -203,7 +213,7 @@ header a{
 }
 
 /* PORTFOLIO */
-
+/* 
 #portfolio {
   background-color: rgb(30, 23, 46);
   padding-top: 50px;
@@ -244,8 +254,6 @@ header a{
   text-transform: uppercase;
 }
 
- /* ------------------------------------------------------- */
-
 .imgCont {
   position: relative;
   width: 100%;
@@ -256,10 +264,10 @@ header a{
   display: block;
   max-width: 100%;
 }
-
+ */
 /* PORTFOLIO HOVER EFFECT */
 
-.overlay {
+/* .overlay {
   position: absolute;
   transition: all 0.4s ease;
   opacity: 0;
@@ -335,8 +343,6 @@ header a{
   border-top: 1px solid whitesmoke;
 }  
 
-/* -------------------------------------------------- */
-
 .inner {
   overflow: hidden;
 }
@@ -347,11 +353,11 @@ header a{
 
 .inner:hover img {
   transform: scale(1.2);
-}
+} */
 
-/* contacts */
+/* CONTACT */
 
-#contacts {
+#contact {
   justify-content: center;
   text-align: center;
   padding-top: 50px;
@@ -359,7 +365,7 @@ header a{
   padding-right: 10px;
 }
 
-#contacts h2 {
+#contact h2 {
   color: #A239CA;
 }
 
@@ -435,17 +441,17 @@ header a{
   }
 }
 
-/* SKILLS PAGE */
+/* SKILLS */
 
 .progress-section {
   padding: 20px 0 20px 0;
   width: 100%;
-  background: rgb(30, 23, 46);
+  /* background: rgb(30, 23, 46); */
 }
 
 .text-skill {
   width: 80%;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 0;
   font-size: 20px;
   text-align: center;
@@ -492,18 +498,18 @@ header a{
 }
 
 .html {
-  width: 85%;
+  width: 100%;
   animation: html 2s;
 }
 
 .css {
-  width: 75%;
-  animation: css 2s;
+  width: 90%;
+  animation: css 3s;
 }
 
 .javascript {
-  width: 40%;
-  animation: javascript 2s;
+  width: 80%;
+  animation: javascript 4s;
 }
 
 @keyframes html {
@@ -511,7 +517,7 @@ header a{
     width: 0%;
   }
   100%{
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -520,7 +526,7 @@ header a{
     width: 0%;
   }
   100%{
-    width: 75%;
+    width: 90%;
   }
 }
 
@@ -529,11 +535,11 @@ header a{
     width: 0%;
   }
   100%{
-    width: 40%;
+    width: 80%;
   }
 }
 
-.lessons {
+/* .lessons {
   padding-top: 30px;
 }
 
@@ -561,7 +567,7 @@ header a{
   font-size: 2.2rem;
   font-weight: 200;
   text-transform: uppercase;
-}
+} */
 
 @media (max-width: 1255px){
   .progress-section {
@@ -569,20 +575,20 @@ header a{
        "text"
        "skill";
   }
-  .lessons h1 {
+  /* .lessons h1 {
     margin-left: 150px;
     margin-right: 150px;
-  }
+  } */
 }
 
-@media (max-width: 958px){
+/* @media (max-width: 958px){
   .lessons h1 {
     margin-left: 10px;
     margin-right: 10px;
   }
-}
+} */
 
-.studying {
+/* .studying {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   padding-bottom: 150px;
@@ -590,20 +596,20 @@ header a{
   grid-gap: 40px;
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 
 /* FOOTER */
 
 footer {
-  font-size: 12px;
+  font-size: 1rem;
   color: whitesmoke;
   width: 100%;
+  padding: 30px;
   background: #0E0B16;
   border-top: 1px solid #A239CA;
+  text-transform: uppercase;
 }
-
-
 
 .landing h2 {
   font-size: 2.2rem;
@@ -626,6 +632,7 @@ i {
 
 a {
   color: whitesmoke;
+  text-decoration-color: none;
 }
 
 a i:hover {
