@@ -151,9 +151,7 @@ header a{
 #contact {
   justify-content: center;
   text-align: center;
-  padding-top: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 #contact h2 {
@@ -163,7 +161,7 @@ header a{
 .social-icon {
   transform: translateY(-50%);
   text-align: center;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 .social-btn {
@@ -187,13 +185,13 @@ header a{
 
 @media screen and (max-width: 700px) {
   .social-icon {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .social-icon {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 }
 
@@ -237,18 +235,13 @@ header a{
 .progress-section {
   padding: 20px 0 20px 0;
   width: 100%;
-  /* background: rgb(30, 23, 46); */
 }
 
 .text-skill {
   width: 80%;
-  margin: 40px auto;
+  margin: 10px auto;
   padding: 0;
   text-align: center;
-}
-
-.text-skill p {
-  margin-top: 50px;
 }
 
 .skill {
