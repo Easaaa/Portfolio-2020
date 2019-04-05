@@ -185,13 +185,7 @@ header a{
 
 @media screen and (max-width: 700px) {
   .social-icon {
-    margin-top: 80px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .social-icon {
-    margin-top: 70px;
+    margin-top: 90px;
   }
 }
 
