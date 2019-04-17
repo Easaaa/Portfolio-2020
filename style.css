@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -58,7 +59,7 @@ header h1 span {
   }
 }
 
-header a{
+header a {
   cursor: pointer;
   font-size: 22px;
   color: white;
@@ -86,30 +87,17 @@ header a{
 
 #about {
   background-color: white;
-  grid-template-areas: 
-      "img"
-      "text";
+  grid-template-areas:
+    "img"
+    "text";
   grid-gap: 10px;
   text-align: center;
   padding: 40px 0;
 }
 
 #about img {
-  width: 13%;
-  height: auto;
-  border-radius: 60%;
-}
-
-@media (max-width: 900px) {
-  #about img {
-  width: 30%;
-  }
-}
-
-@media (max-width: 600px) {
-  #about img {
-  width: 50%;
-  }
+  width: 80px;
+  padding: 10px;
 }
 
 #about p {
@@ -121,28 +109,29 @@ header a{
 /* ------ COMPANY SECTION -------- */
 
 #company {
-  padding: 50px 0;
   text-align: center;
-  padding-bottom: 30px;
-  margin-top: 15px;
+  padding: 10px 0 40px 0;
   background: white;
 }
 
 #company img {
   max-width: 200px;
-  background: #000;
+  background: transparent;
   border-radius: 50%;
+  background: whitesmoke;
   transition: 0.8s ease-in-out;
 }
 
-#company img:hover {
-  border-radius: 3%;
+#company a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  color: black;
 }
 
 #company h1 {
   color: #000;
   font-weight: 100;
-  padding-top: 20px;
 }
 
 #company p {
@@ -154,11 +143,20 @@ header a{
 #contact {
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 #contact h2 {
   color: #000;
+}
+
+#contact p {
+  padding: 15px;
+}
+
+#contact img {
+  width: 80px;
+  padding: 20px 0;
 }
 
 .social-icon {
@@ -171,7 +169,7 @@ header a{
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: #000; 
+  background: #000;
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #dcd9d970;
@@ -215,13 +213,17 @@ header a{
 }
 
 @keyframes aaa {
-  0%{
+  0% {
     left: -110%;
     top: 90%;
-  }50%{
+  }
+
+  50% {
     left: 10%;
     top: -30%;
-  }100%{
+  }
+
+  100% {
     left: -10%;
     top: -10%;
   }
@@ -229,8 +231,8 @@ header a{
 
 /* SKILLS */
 
-.progress-section {
-  padding: 20px 0 20px 0;
+#skills {
+  padding: 40px 0;
   width: 100%;
 }
 
@@ -241,89 +243,15 @@ header a{
   text-align: center;
 }
 
-.skill {
-  width: 60%;
-  margin: 60px auto;
-  padding: 0;
-  list-style: none;
-}
-
-.progress-section h1 {
+#skills h1 {
   color: #000;
   font-weight: 200;
   text-align: center;
   text-transform: uppercase;
 }
 
-.skill li {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.bar-progress {
-  background: white;
-  display: block;
-  height: 6px;
-  border: 1px solid;
-  border-radius: 3px;
-  overflow: hidden;
- /*  box-shadow: 0 0 10px #000; */
-}
-
-.bar-progress span {
-  height: 40px;
-  float: left;
-  background: #000;
-}
-
-.html {
-  width: 100%;
-  animation: html 2s;
-}
-
-.css {
-  width: 90%;
-  animation: css 3s;
-}
-
-.javascript {
-  width: 80%;
-  animation: javascript 4s;
-}
-
-@keyframes html {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 100%;
-  }
-}
-
-@keyframes css {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 90%;
-  }
-}
-
-@keyframes javascript {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
-}
-
-@media (max-width: 1255px){
-  .progress-section {
-    grid-template-areas:
-       "text"
-       "skill";
-  }
+#skills img {
+  padding-bottom: 20px;
 }
 
 /* FOOTER */
@@ -354,7 +282,8 @@ h1 span {
 
 i {
   font-size: 30px;
-  margin: 0.5em auto 0.5em;;
+  margin: 0.5em auto 0.5em;
+  ;
 }
 
 a {
@@ -366,6 +295,7 @@ a i:hover {
   color: #000;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border: transparent;
- }
+}
