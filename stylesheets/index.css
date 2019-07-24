@@ -11,7 +11,7 @@ body {
 /* ====== NAV ====== */
 
 nav {
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   place-items: center;
@@ -28,9 +28,15 @@ nav {
 .curriculum button {
   padding: 10px 20px;
   font-size: 1.1rem;
-  border: 2px solid black;
+  border: 2px solid #002fa7;
+  color: #002fa7;
   border-radius: 290486px;
   text-transform: uppercase;
+}
+
+.curriculum button:hover {
+  background: #002fa7;
+  color: white;
 }
 
 .languages {
@@ -80,6 +86,7 @@ header p {
   width: 800px;
   position: relative;
   bottom: 0;
+  z-index: 2;
 }
 
 /* ====== MIDDLE BANNER ====== */
@@ -88,12 +95,14 @@ header p {
   /* background: #0a2235; */
   background: #002fa7;
   color: white;
+  position: relative;
+  padding-bottom: 120px;
 }
 
 .about,
 .skills,
 .contact {
-  padding: 100px;
+  padding: 40px 100px 100px 100px;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
@@ -101,14 +110,17 @@ header p {
 
 .about h2,
 .skills h2,
-.contact h2 {
+.contact h2,
+.show-works h2,
+.call-action h2 {
   font-size: 2rem;
   padding: 20px;
   font-weight: 700;
 }
 
 .about p,
-.contact p {
+.contact p,
+.call-action p {
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.8rem;
@@ -123,7 +135,7 @@ header p {
 
 .skills ul {
   display: grid;
-  grid-template-columns: repeat(7, minmax(30px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
   list-style-type: none;
   place-items: center;
   padding-top: 20px;
@@ -146,7 +158,7 @@ header p {
 
 .socials {
   display: grid;
-  grid-template-columns: repeat(4, minmax(30px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
   place-items: center;
 }
 
@@ -156,4 +168,98 @@ header p {
 
 .socials {
   padding-top: 30px;
+}
+
+/* ====== NAV BANNER ====== */
+
+.nav-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.1rem;
+  padding-top: 20px;
+}
+
+.btn-banner {
+  color: white;
+  padding: 15px 20px;
+}
+
+.btn-banner a {
+  color: white;
+  background: #0034b7;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-banner a:hover,
+.btn-banner:active {
+  background: #002480;
+}
+
+/* ====== MY RECENT WORKS ====== */
+
+.show-works {
+  position: relative;
+  padding: 50px 0;
+  bottom: 130px;
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+}
+
+.show-works p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+}
+
+.works {
+  display: grid;
+  justify-items: center;
+  padding: 60px 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.work {
+  width: 300px;
+  background: whitesmoke;
+  padding: 100px;
+  border-radius: 20px;
+}
+
+/* ======= CALL TO ACTION ====== */
+
+.call-action {
+  width: 70%;
+  margin: 0 auto;
+  background: #222;
+  color: white;
+  padding: 50px;
+  border-radius: 45px;
+  box-shadow: 0 0 10px 0 #22222259;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  position: relative;
+  top: 70px;
+}
+
+.call-action button {
+  padding: 15px 20px;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2000px;
+}
+
+/* ======= FOOTER ======= */
+
+footer {
+  background: #c4dff6;
+  padding: 200px;
 }
