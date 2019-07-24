@@ -260,9 +260,15 @@ header p {
 /* ======= FOOTER ======= */
 
 footer {
-  background: #c4dff6;
+  /* background: #c4dff6; */
+  background: #002fa7;
+  color: #ffffffd6;
   padding: 150px;
   text-align: center;
+}
+
+footer .logo h1 {
+  color: white;
 }
 
 .philo-phrase {
@@ -270,6 +276,10 @@ footer {
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.8rem;
+}
+
+.copyright {
+  padding-top: 50px;
 }
 
 footer .socials {
