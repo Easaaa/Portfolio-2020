@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ====== NAV ====== */
+
+nav {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  place-items: center;
+}
+
+.logo h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  place-self: start;
+  color: #002fa7;
+}
+
+.curriculum button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: 2px solid black;
+  border-radius: 290486px;
+  text-transform: uppercase;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.lang a {
+  width: 36px;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.selected a {
+  background: #002fa7;
+  color: white;
+}
+
+/* ====== HEADER ====== */
+
+header {
+  text-align: center;
+  padding-top: 80px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  padding-top: 30px;
+  font-size: 1.3rem;
+  color: #000000c9;
+}
+
+.personal-emoji {
+  width: 220px;
+}
+
+.header-bg-div {
+  height: 400px;
+}
+
+.header-bg {
+  width: 800px;
+  position: relative;
+  bottom: 0;
+}
+
+/* ====== MIDDLE BANNER ====== */
+
+.middle-banner {
+  /* background: #0a2235; */
+  background: #002fa7;
+  color: white;
+}
+
+.about,
+.skills,
+.contact {
+  padding: 100px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2,
+.skills h2,
+.contact h2 {
+  font-size: 2rem;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.about p,
+.contact p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+  color: #ffffffc9;
+}
+
+/* ====== SKILLS ====== */
+
+.skills {
+  display: none;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(30px, 1fr));
+  list-style-type: none;
+  place-items: center;
+  padding-top: 20px;
+}
+
+.skills i {
+  font-size: 3rem;
+}
+
+/* ====== CONTACT ====== */
+
+.contact {
+  display: none;
+}
+
+.contact a {
+  color: white;
+  text-decoration: underline;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(30px, 1fr));
+  place-items: center;
+}
+
+.socials i {
+  font-size: 3rem;
+}
+
+.socials {
+  padding-top: 30px;
+}
