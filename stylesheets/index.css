@@ -97,7 +97,8 @@ header p {
 .header-bg {
   width: 800px;
   position: relative;
-  bottom: 0px;
+  top: 40px;
+  z-index: 1;
 }
 
 /* ====== MIDDLE BANNER ====== */
@@ -107,7 +108,7 @@ header p {
   background: #002fa7;
   color: white;
   position: relative;
-  padding-bottom: 120px;
+  padding: 140px 0 210px 0;
 }
 
 .about {
