@@ -8,6 +8,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+
+/* Utility */
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
 /* ====== NAV ====== */
 
 nav {
@@ -32,6 +43,7 @@ nav {
   color: #002fa7;
   border-radius: 290486px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .curriculum button:hover {
@@ -85,8 +97,7 @@ header p {
 .header-bg {
   width: 800px;
   position: relative;
-  bottom: 0;
-  z-index: 2;
+  bottom: 0px;
 }
 
 /* ====== MIDDLE BANNER ====== */
@@ -99,11 +110,15 @@ header p {
   padding-bottom: 120px;
 }
 
+.about {
+  opacity: 1;
+  transition: opacity 300ms cubic-bezier(.22, .68, 0, 1.71);
+}
+
 .about,
 .skills {
   padding: 40px 100px 100px 100px;
   text-align: center;
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -129,23 +144,25 @@ header p {
 .banner-nav {
   padding-top: 50px;
   color: #e2e2e2;
-  z-index: 999;
+}
+
+.banner-nav h4 {
+  cursor: pointer;
 }
 
 .about-nav {
   display: inline-block;
-  cursor: pointer;
 }
 
 .skills-nav {
   display: inline-block;
-  cursor: pointer;
 }
 
 /* ====== SKILLS ====== */
 
 .skills {
-  display: none;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(.22, .68, 0, 1.71);
 }
 
 .skills ul {
@@ -174,34 +191,6 @@ header p {
 
 .socials {
   padding-top: 30px;
-}
-
-/* ====== NAV BANNER ====== */
-
-.nav-banner {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.1rem;
-  padding-top: 20px;
-}
-
-.btn-banner {
-  color: white;
-  padding: 15px 20px;
-}
-
-.btn-banner a {
-  color: white;
-  background: #0034b7;
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.btn-banner a:hover,
-.btn-banner:active {
-  background: #002480;
 }
 
 /* ====== MY RECENT WORKS ====== */
@@ -243,7 +232,7 @@ header p {
 .call-action {
   width: 70%;
   margin: 0 auto;
-  background: #222;
+  background: #09325d;
   color: white;
   padding: 50px;
   border-radius: 45px;
@@ -266,10 +255,9 @@ header p {
 /* ======= FOOTER ======= */
 
 footer {
-  /* background: #c4dff6; */
-  background: #002fa7;
+  background: #84a7ff;
   color: #ffffffd6;
-  padding: 150px;
+  padding: 100px 80px 80px 80px;
   text-align: center;
 }
 
