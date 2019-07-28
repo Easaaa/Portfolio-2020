@@ -78,6 +78,7 @@ header {
 
 header h1 {
   font-size: 3rem;
+  color: rgba(0, 0, 0, 0.79);
 }
 
 header p {
@@ -132,6 +133,11 @@ header p {
   font-weight: 700;
 }
 
+.about p {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
 .about p,
 .call-action p {
   font-size: 1rem;
@@ -172,6 +178,8 @@ header p {
   list-style-type: none;
   place-items: center;
   padding-top: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .skills i {
@@ -219,21 +227,26 @@ header p {
   justify-items: center;
   padding: 60px 0;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
 }
 
 .work {
-  width: 300px;
-  background: whitesmoke;
+  width: 350px;
+  background: #120e2b;
+  color: #fff;
   padding: 100px;
-  border-radius: 20px;
+  border-radius: 15px;
+
 }
+
+
 
 /* ======= CALL TO ACTION ====== */
 
 .call-action {
   width: 70%;
   margin: 0 auto;
-  background: #09325d;
+  background: #002fa7;
   color: white;
   padding: 50px;
   border-radius: 45px;
@@ -256,7 +269,7 @@ header p {
 /* ======= FOOTER ======= */
 
 footer {
-  background: #84a7ff;
+  background: #6579ad;
   color: #ffffffd6;
   padding: 100px 80px 80px 80px;
   text-align: center;
