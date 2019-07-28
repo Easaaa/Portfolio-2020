@@ -100,8 +100,7 @@ header p {
 }
 
 .about,
-.skills,
-.contact {
+.skills {
   padding: 40px 100px 100px 100px;
   text-align: center;
   max-width: 900px;
@@ -110,7 +109,6 @@ header p {
 
 .about h2,
 .skills h2,
-.contact h2,
 .show-works h2,
 .call-action h2 {
   font-size: 2rem;
@@ -119,12 +117,29 @@ header p {
 }
 
 .about p,
-.contact p,
 .call-action p {
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.8rem;
   color: #ffffffc9;
+}
+
+/* Banner nav */
+
+.banner-nav {
+  padding-top: 50px;
+  color: #e2e2e2;
+  z-index: 999;
+}
+
+.about-nav {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.skills-nav {
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* ====== SKILLS ====== */
@@ -145,16 +160,7 @@ header p {
   font-size: 3rem;
 }
 
-/* ====== CONTACT ====== */
-
-.contact {
-  display: none;
-}
-
-.contact a {
-  color: white;
-  text-decoration: underline;
-}
+/* ====== SOCIALS ====== */
 
 .socials {
   display: grid;
