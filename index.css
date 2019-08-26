@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
 
 /* Utility */
@@ -23,8 +24,26 @@ body {
 nav {
   padding: 20px 40px 40px 40px;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   place-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger i {
+  font-size: 2rem;
+  padding: 10px 12px;
+  position: fixed;
+  bottom: 13px;
+  left: 50%;
+  margin-left: -28px;
+  color: white;
+  background: #a222fb;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .logo h1 {
@@ -32,22 +51,29 @@ nav {
   font-size: 2rem;
   font-weight: 400;
   place-self: start;
-  color: #002fa7;
+  color: #a222fb;
 }
 
 .curriculum button {
   padding: 10px 20px;
+  width: 110px;
   font-size: 1.1rem;
-  border: 2px solid #002fa7;
-  color: #002fa7;
+  border: 2px solid #a222fb;
+  color: #a222fb;
   border-radius: 290486px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: transform 200ms;
 }
 
 .curriculum button:hover {
-  background: #002fa7;
+  background: #a222fb;
   color: white;
+  transform: scale(1.1);
+}
+
+.curriculum i {
+  padding-right: 15px;
 }
 
 .languages {
@@ -64,9 +90,10 @@ nav {
 }
 
 .selected a {
-  background: #002fa7;
+  background: #a222fb;
   color: white;
   border-radius: 290486px;
+  cursor: auto;
 }
 
 /* ====== HEADER ====== */
@@ -96,7 +123,8 @@ header p {
 }
 
 .header-bg {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   position: relative;
   top: 40px;
   z-index: 1;
@@ -105,7 +133,7 @@ header p {
 /* ====== MIDDLE BANNER ====== */
 
 .middle-banner {
-  background: #002fa7;
+  background: #120e2b;
   color: white;
   position: relative;
   padding: 140px 0 210px 0;
@@ -141,7 +169,7 @@ header p {
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.8rem;
-  color: #ffffffc9;
+  color: #fff;
 }
 
 /* Banner nav */
@@ -172,7 +200,7 @@ header p {
 
 .skills ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
   list-style-type: none;
   place-items: center;
   padding-top: 20px;
@@ -187,8 +215,8 @@ header p {
 
 .skills span {
   width: 90px;
-  background: white;
-  color: #002fa7;
+  background: #a222fb;
+  color: white;
   padding: 5px 0;
   text-align: center;
   border-radius: 8px;
@@ -206,7 +234,8 @@ header p {
 
 .socials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   place-items: center;
 }
 
@@ -222,6 +251,11 @@ header p {
 
 .socials {
   padding-top: 30px;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
 }
 
 /* ====== MY RECENT WORKS ====== */
@@ -250,19 +284,22 @@ header p {
 
 .works {
   display: grid;
-  justify-items: center;
+  place-items: center;
   text-align: start;
   padding: 60px 0;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 40px;
   max-width: 1260px;
   margin: 0 auto;
 }
 
 .work {
-  width: 350px;
-  height: 228px;
-  background: #120e2b;
+  box-sizing: border-box;
+  max-width: 350px;
+  max-height: 228px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #120e2b;
   color: #fff;
   padding: 20px;
   border-radius: 15px;
@@ -270,6 +307,11 @@ header p {
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 10px;
+  transition: transform 100ms ease-in-out;
+}
+
+.work:hover {
+  transform: scale(1.05);
 }
 
 .work-link {
@@ -286,12 +328,13 @@ header p {
   font-size: 1.4rem;
 }
 
+
 /* ======= CALL TO ACTION ====== */
 
 .call-action {
   width: 70%;
   margin: 0 auto;
-  background: #002fa7;
+  background: #a222fb;
   color: white;
   padding: 50px;
   border-radius: 45px;
@@ -303,15 +346,22 @@ header p {
   top: 70px;
 }
 
-.call-action button {
+.call-action a {
   padding: 15px 20px;
-  background: white;
-  color: #002fa7;
+  background: #a222fb;
+  color: white;
+  border: 1px solid white;
   font-size: 1rem;
   border-radius: 2000px;
   outline: none;
   transition: 150ms ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.call-action a:hover {
+  background: white;
+  color: #a222fb;
 }
 
 .call-action i {
@@ -319,14 +369,10 @@ header p {
   padding-right: 3px;
 }
 
-.call-action button:hover {
-  transform: scale(1.1)
-}
-
 /* ======= FOOTER ======= */
 
 footer {
-  background: #6579ad;
+  background: #120e2b;
   color: #ffffffd6;
   padding: 100px 80px 80px 80px;
   text-align: center;
@@ -350,4 +396,75 @@ footer .logo h1 {
 footer .socials {
   width: 30%;
   margin: 0 auto;
+}
+
+
+/* ======= MEDIA QUERY ======= */
+
+@media only screen and (max-width: 1300px) {
+  .call-action {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .middle-banner {
+    padding: 60px 0 150px 0;
+  }
+
+  .about,
+  .skills {
+    padding: 20px 50px 50px 50px;
+  }
+
+  .call-action {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+    text-align: center;
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    display: none;
+    position: absolute;
+  }
+
+  .hamburger {
+    display: inline;
+  }
+
+  footer .socials {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header-bg-div {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .show-works {
+    width: 100%;
+  }
+
+  .middle-banner {
+    padding: 0px 0 150px 0;
+  }
+
+  .about,
+  .skills {
+    padding: 20px;
+  }
 }
