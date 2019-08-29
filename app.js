@@ -16,3 +16,14 @@ function toggleNav() {
     aboutSection.style.opacity = '1';
   }
 }
+
+const hambButton = document.querySelector('.hamburger');
+const navbar = document.querySelector('nav');
+
+function toggleHamb() {
+  if ((hambButton.style.display = 'inline')) {
+    navbar.classList.toggle('show');
+  }
+}
+
+hambButton.addEventListener('click', toggleHamb);

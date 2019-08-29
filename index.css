@@ -30,6 +30,7 @@ nav {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .hamburger i {
@@ -43,7 +44,6 @@ nav {
   background: #a222fb;
   border-radius: 50%;
   z-index: 3;
-  cursor: pointer;
 }
 
 .logo h1 {
@@ -226,7 +226,7 @@ header p {
   transition: 0.6s opacity;
 }
 
-.skills li:hover>span {
+.skills li:hover > span {
   opacity: 1;
 }
 
@@ -328,7 +328,6 @@ header p {
   font-size: 1.4rem;
 }
 
-
 /* ======= CALL TO ACTION ====== */
 
 .call-action {
@@ -398,7 +397,6 @@ footer .socials {
   margin: 0 auto;
 }
 
-
 /* ======= MEDIA QUERY ======= */
 
 @media only screen and (max-width: 1300px) {
@@ -408,6 +406,10 @@ footer .socials {
 }
 
 @media only screen and (max-width: 920px) {
+  header {
+    padding-top: 50px;
+  }
+
   .middle-banner {
     padding: 60px 0 150px 0;
   }
@@ -432,7 +434,36 @@ footer .socials {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
     display: none;
+    width: 100%;
+    background: white;
     position: absolute;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .logo {
+    visibility: hidden;
+  }
+
+  .curriculum button {
+    background: white;
+  }
+
+  .languages {
+    padding-top: 40px;
+  }
+
+  .lang a {
+    color: #a222fb;
+    background: white;
+    border: 1px solid #a222fb;
+    border-radius: 290486px;
+  }
+
+  .selected a {
+    background: #a222fb;
+    color: white;
   }
 
   .hamburger {
@@ -447,6 +478,9 @@ footer .socials {
 @media only screen and (max-width: 600px) {
   header {
     height: 100vh;
+    padding: 0 10px;
+    display: grid;
+    place-content: center;
   }
 
   .header-bg-div {
