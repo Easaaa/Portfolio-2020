@@ -18,19 +18,19 @@ body {
 .show {
   display: inline-block;
 }
-
 /* ====== NAV ====== */
 
 nav {
   padding: 20px 40px 40px 40px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   place-items: center;
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
+  outline: none;
 }
 
 .hamburger i {
@@ -46,6 +46,10 @@ nav {
   z-index: 3;
 }
 
+.logo {
+  place-self: start;
+}
+
 .logo h1 {
   font-family: "Pacifico", cursive;
   font-size: 2rem;
@@ -54,32 +58,24 @@ nav {
   color: #a222fb;
 }
 
-.curriculum button {
-  padding: 10px 20px;
-  width: 110px;
-  font-size: 1.1rem;
-  border: 2px solid #a222fb;
-  color: #a222fb;
-  border-radius: 290486px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform 200ms;
-}
-
-.curriculum button:hover {
-  background: #a222fb;
-  color: white;
-  transform: scale(1.1);
-}
-
-.curriculum i {
-  padding-right: 15px;
-}
-
 .languages {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  place-self: end;
+}
+
+.all-lang {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  visibility: hidden;
+}
+
+.icon-lang {
+  font-size: 1.5rem;
+  color: #a222fb;
+  cursor: pointer;
+  text-align: end;
 }
 
 .lang a {
@@ -170,6 +166,34 @@ header p {
   letter-spacing: 1px;
   line-height: 1.8rem;
   color: #fff;
+}
+
+.curriculum {
+  position: relative;
+  top: 60px;
+}
+
+.curriculum a {
+  padding: 10px 20px;
+  width: 110px;
+  font-size: 1.1rem;
+  border: 2px solid white;
+  color: white;
+  border-radius: 290486px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 200ms;
+  text-decoration: none;
+}
+
+.curriculum a:hover {
+  background: white;
+  color: #a222fb;
+  transform: scale(1.1);
+}
+
+.curriculum i {
+  padding-right: 15px;
 }
 
 /* Banner nav */
@@ -411,7 +435,7 @@ footer .socials {
   }
 
   .middle-banner {
-    padding: 60px 0 150px 0;
+    padding: 60px 0 200px 0;
   }
 
   .about,
@@ -443,7 +467,7 @@ footer .socials {
   }
 
   .logo {
-    visibility: hidden;
+    padding-bottom: 50px;
   }
 
   .curriculum button {
@@ -451,7 +475,7 @@ footer .socials {
   }
 
   .languages {
-    padding-top: 40px;
+    padding-top: 70px;
   }
 
   .lang a {
@@ -494,7 +518,7 @@ footer .socials {
   }
 
   .middle-banner {
-    padding: 0px 0 150px 0;
+    padding: 0px 0 250px 0;
   }
 
   .about,
