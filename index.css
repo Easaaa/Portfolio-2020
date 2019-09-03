@@ -467,7 +467,7 @@ footer .socials {
   }
 
   .logo {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .curriculum button {
@@ -475,13 +475,17 @@ footer .socials {
   }
 
   .languages {
-    padding-top: 70px;
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .all-lang {
+    place-self: center;
   }
 
   .lang a {
     color: #a222fb;
     background: white;
-    border: 1px solid #a222fb;
     border-radius: 290486px;
   }
 

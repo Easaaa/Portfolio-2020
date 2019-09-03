@@ -2,6 +2,10 @@ const aboutBtn = document.querySelector('.about-nav');
 const skillsBtn = document.querySelector('.skills-nav');
 const aboutSection = document.querySelector('.about');
 const skillsSection = document.querySelector('.skills');
+const hambButton = document.querySelector('.hamburger');
+const navbar = document.querySelector('nav');
+const languages = document.querySelector('.all-lang');
+const iconWorld = document.querySelector('.icon-lang');
 
 // MIDDLE BANNER LOGIC
 function toggleNav() {
@@ -18,18 +22,6 @@ function toggleNav() {
   }
 }
 
-// HAMBURGER MOBILE NAV
-const hambButton = document.querySelector('.hamburger');
-const navbar = document.querySelector('nav');
-
-function toggleHamb() {
-  if ((hambButton.style.display = 'inline')) {
-    navbar.classList.toggle('show');
-  }
-}
-
-hambButton.addEventListener('click', toggleHamb);
-
 // Hide hamburger on scroll
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
@@ -40,9 +32,6 @@ window.addEventListener('scroll', () => {
 });
 
 // LANGUAGES
-const languages = document.querySelector('.all-lang');
-const iconWorld = document.querySelector('.icon-lang');
-
 function showHideLang() {
   if (languages.style.visibility == 'hidden') {
     languages.style.visibility = 'visible';
@@ -52,3 +41,14 @@ function showHideLang() {
 }
 
 iconWorld.addEventListener('click', showHideLang);
+
+// HAMBURGER MOBILE NAV
+function toggleHamb() {
+  if ((hambButton.style.display = 'inline')) {
+    navbar.classList.toggle('show');
+    iconWorld.style.display = 'none';
+    languages.style.visibility = 'visible';
+  }
+}
+
+hambButton.addEventListener('click', toggleHamb);
