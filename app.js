@@ -32,8 +32,9 @@ window.addEventListener('scroll', () => {
 });
 
 // LANGUAGES
+languages.style.visibility = 'hidden';
 function showHideLang() {
-  if (languages.style.visibility == 'hidden') {
+  if (languages.style.visibility === 'hidden') {
     languages.style.visibility = 'visible';
   } else {
     languages.style.visibility = 'hidden';
