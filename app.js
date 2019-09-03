@@ -3,6 +3,7 @@ const skillsBtn = document.querySelector('.skills-nav');
 const aboutSection = document.querySelector('.about');
 const skillsSection = document.querySelector('.skills');
 
+// MIDDLE BANNER LOGIC
 function toggleNav() {
   if (skillsSection.classList.contains('hide')) {
     aboutSection.style.opacity = '0';
@@ -17,6 +18,7 @@ function toggleNav() {
   }
 }
 
+// HAMBURGER MOBILE NAV
 const hambButton = document.querySelector('.hamburger');
 const navbar = document.querySelector('nav');
 
@@ -27,3 +29,26 @@ function toggleHamb() {
 }
 
 hambButton.addEventListener('click', toggleHamb);
+
+// Hide hamburger on scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    hambButton.style.display = 'none';
+  } else {
+    hambButton.style.display = 'inline';
+  }
+});
+
+// LANGUAGES
+const languages = document.querySelector('.all-lang');
+const iconWorld = document.querySelector('.icon-lang');
+
+function showHideLang() {
+  if (languages.style.visibility == 'hidden') {
+    languages.style.visibility = 'visible';
+  } else {
+    languages.style.visibility = 'hidden';
+  }
+}
+
+iconWorld.addEventListener('click', showHideLang);
