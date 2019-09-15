@@ -18,6 +18,7 @@ body {
 .show {
   display: inline-block;
 }
+
 /* ====== NAV ====== */
 
 nav {
@@ -37,12 +38,10 @@ nav {
   font-size: 2rem;
   padding: 10px 12px;
   position: fixed;
-  bottom: 13px;
-  left: 50%;
-  margin-left: -28px;
+  top: 0;
+  left: 0;
   color: white;
   background: #a222fb;
-  border-radius: 50%;
   z-index: 3;
 }
 
@@ -107,6 +106,11 @@ header p {
   padding-top: 30px;
   font-size: 1.3rem;
   color: #000000c9;
+}
+
+.video-presentation {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .personal-emoji {
