@@ -37,7 +37,7 @@ nav {
 .hamburger i {
   font-size: 2rem;
   padding: 10px 12px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   color: white;
@@ -55,6 +55,13 @@ nav {
   font-weight: 400;
   place-self: start;
   color: #a222fb;
+}
+
+.logo img {
+  width: 200px;
+  position: absolute;
+  top: -40px;
+  left: 10px;
 }
 
 .languages {
@@ -469,8 +476,8 @@ footer .socials {
     padding: 30px;
   }
 
-  .logo {
-    padding-bottom: 30px;
+  .logo img {
+    position: relative;
   }
 
   .curriculum button {
@@ -478,7 +485,6 @@ footer .socials {
   }
 
   .languages {
-    padding-top: 10px;
     grid-template-columns: 1fr;
   }
 

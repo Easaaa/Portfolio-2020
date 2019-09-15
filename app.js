@@ -22,14 +22,14 @@ function toggleNav() {
   }
 }
 
-// Hide hamburger on scroll
+/* // Hide hamburger on scroll
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
     hambButton.style.display = 'none';
   } else {
     hambButton.style.display = 'inline';
   }
-});
+}); */
 
 // LANGUAGES
 languages.style.visibility = 'hidden';
