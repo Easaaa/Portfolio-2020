@@ -74,6 +74,9 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  position: absolute;
+  right: 50px;
+  top: 29px;
 }
 
 .icon-lang {
@@ -84,6 +87,8 @@ nav {
   text-align: center;
   width: 40px;
   padding: 5px;
+  position: absolute;
+  right: 0;
 }
 
 .lang a {
@@ -496,6 +501,7 @@ footer .socials {
 
   .all-lang {
     place-self: center;
+    position: initial;
   }
 
   .lang a {
