@@ -340,7 +340,7 @@ header p {
 .work {
   box-sizing: border-box;
   max-width: 350px;
-  max-height: 228px;
+  height: 260px;
   width: 80%;
   margin: 0 auto;
   background-color: #f5f4ff;
