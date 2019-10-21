@@ -530,7 +530,7 @@ header p {
 .call-action {
   width: 70%;
   margin: 0 auto;
-  background: #f5f4ff;
+  background: #dfdcff;
   color: #120e2b;
   padding: 50px;
   border-radius: 45px;
@@ -556,11 +556,11 @@ header p {
 }
 
 .call-action .col:first-of-type {
-  border-right: 2px solid #120e2b;
+  border-right: 4px solid #fff;
 }
 
 .call-action .col:last-of-type {
-  border-left: 2px solid #120e2b;
+  border-left: 4px solid #fff;
 }
 
 .call-action p {
