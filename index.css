@@ -386,7 +386,7 @@ header p {
   transition: 0.6s opacity;
 }
 
-.skills li:hover > span {
+.skills li:hover>span {
   opacity: 1;
 }
 
@@ -473,8 +473,21 @@ header p {
 }
 
 .work-title {
-  border-bottom: 2px solid black;
   padding: 5px;
+  position: relative;
+}
+
+.work-title h4 {
+  padding-bottom: 5px;
+}
+
+.work-title:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  width: 50px;
+  height: 4px;
+  background-color: #120e2b;
 }
 
 .work:hover,
@@ -484,9 +497,9 @@ header p {
   color: #fff;
 }
 
-.work:hover .work-title,
-.work:active .work-title {
-  border-bottom: 2px solid #fff;
+.work:hover .work-title:after,
+.work:active .work-title:after {
+  background-color: #fff;
 }
 
 .work:hover .work-link a,
@@ -543,17 +556,17 @@ header p {
 }
 
 .call-action .col:first-of-type {
-  border-right: 4px solid #120e2b;
+  border-right: 2px solid #120e2b;
 }
 
 .call-action .col:last-of-type {
-  border-left: 4px solid #120e2b;
+  border-left: 2px solid #120e2b;
 }
 
 .call-action p {
   color: #120e2b;
   text-align: center;
-  padding: 0 15px;
+  padding: 5px 0;
 }
 
 /* ======= FOOTER ======= */
@@ -664,12 +677,12 @@ footer .socials {
   }
 
   .call-action .col:first-of-type {
-    border-bottom: 4px solid #120e2b;
+    border-bottom: 3px solid #120e2b;
     border-right: none;
   }
 
   .call-action .col:last-of-type {
-    border-top: 4px solid #120e2b;
+    border-top: 3px solid #120e2b;
     border-left: none;
   }
 
@@ -688,13 +701,13 @@ footer .socials {
     width: 100%;
     background: white;
     position: absolute;
-    height: 100vh;
     text-align: center;
     padding: 30px;
   }
 
   .logo img {
     position: relative;
+    display: none;
   }
 
   .curriculum button {
