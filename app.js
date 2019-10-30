@@ -1,47 +1,45 @@
-const aboutBtn = document.querySelector('.about-nav');
-const skillsBtn = document.querySelector('.skills-nav');
+const aboutBtn = document.querySelector('.about__nav');
+const skillsBtn = document.querySelector('.skills__nav');
 const aboutSection = document.querySelector('.about');
 const skillsSection = document.querySelector('.skills');
-const hambButton = document.querySelector('.hamburger');
-const navbar = document.querySelector('nav');
-const languages = document.querySelector('.all-lang');
-const iconWorld = document.querySelector('.icon-lang');
+const languages = document.querySelector('.languages');
+const btnLang = document.querySelector('.btn-lang');
+const email = document.querySelector('.email p');
 
 // MIDDLE BANNER LOGIC
 function toggleNav() {
   if (skillsSection.classList.contains('hide')) {
-    aboutSection.style.opacity = '0';
-    skillsSection.style.opacity = '1';
     skillsSection.classList.toggle('hide');
     aboutSection.classList.toggle('hide');
   } else {
     skillsSection.classList.toggle('hide');
     aboutSection.classList.toggle('hide');
-    skillsSection.style.opacity = '0';
-    aboutSection.style.opacity = '1';
   }
 }
 
-/* // Hide hamburger on scroll
+// Show email on scroll
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 10) {
-    hambButton.style.display = 'none';
+  if (window.scrollY > 300) {
+    email.style.display = 'inline';
   } else {
-    hambButton.style.display = 'inline';
+    email.style.display = 'none';
   }
-}); */
+});
 
 // LANGUAGES
-languages.style.visibility = 'hidden';
-function showHideLang() {
-  if (languages.style.visibility === 'hidden') {
-    languages.style.visibility = 'visible';
-  } else {
-    languages.style.visibility = 'hidden';
-  }
+
+function showLang(e) {
+  languages.style.top = '15px';
+  this.removeEventListener('click', showLang);
+  btnLang.onclick = hideLang;
 }
 
-iconWorld.addEventListener('click', showHideLang);
+function hideLang() {
+  languages.style.top = '-40px';
+  btnLang.onclick = showLang;
+}
+
+btnLang.addEventListener('click', showLang);
 
 // HAMBURGER MOBILE NAV
 function toggleHamb() {

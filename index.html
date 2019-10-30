@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/stylesheets/css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
 
@@ -16,82 +16,61 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="/image/leonardo-sign.png" alt="leonardo tononi sign" />
+        <img src="/image/logo.png" alt="leonardo tononi sign" />
       </div>
 
-      <div class="languages">
-        <div class="all-lang">
+      <div class="languges-container">
+        <div class="languages">
           <div class="lang"><a href="/it/index.html">ITA</a></div>
           <div class="lang selected"><a href="#">ENG</a></div>
           <div class="lang"><a href="/es/index.html">ESP</a></div>
         </div>
-        <div class="icon-lang">
-          <i class="fas fa-globe"></i>
+        <div class="btn-lang">
+          Language
         </div>
       </div>
     </nav>
 
-    <div class="hamburger">
-      <i class="fas fa-globe"></i>
+    <div class="email">
+      <p>leonardotononi@gmail.com</p>
     </div>
 
     <header>
-      <h1>Nerd, Full Stack Developer</h1>
-      <p data-text="I can solve problems or I will die trying.">
-        I can solve problems or I will die trying.
+      <img src="/image/header.png" alt="" />
+      <p>
+        I can <span class="hl-yel">solve</span> problems or I will die trying.
       </p>
-      <!-- <a
-        class="video-presentation"
-        href="https://www.youtube.com/watch_popup?v=c_PZTAW5piQ"
-      >
-        Watch the presentation <i class="far fa-play-circle"></i>
-      </a> -->
-      <div>
-        <img
-          class="personal-emoji"
-          src="/image/leo-bear.jpg"
-          alt="emoji of leonardo tononi"
-        />
-      </div>
-      <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-      </div>
+      <a class="video-presentation">
+        Watch the presentation
+        <i class="far fa-play-circle"></i>
+      </a>
     </header>
 
-    <section class="middle-banner">
-      <div class="col">
-        <div class="header-bg-div">
-          <img
-            class="header-bg"
-            src="/image/header-bg.png"
-            alt="https://icons8.com"
-          />
-        </div>
+    <section class="presentation">
+      <div class="presentation__col">
+        <img
+          class="laptop-abstract"
+          src="/image/laptop.svg"
+          alt="laptop abstract"
+        />
       </div>
-      <div class="col">
+
+      <div class="presentation__col">
         <div class="about">
-          <div class="banner-nav">
-            <div class="about-nav" style="border-bottom: 1px solid white">
+          <div class="presentation__nav">
+            <div class="about__nav" style="border-bottom: 1px solid #f8e9a1">
               <h4>About</h4>
             </div>
             /
             <div
-              class="skills-nav"
+              class="skills__nav"
               style="color: #ffffff87"
               onclick="toggleNav()"
             >
               <h4>Skills</h4>
             </div>
           </div>
-          <h2>Hi, I'm Leonardo Tononi.</h2>
+          <h2>Hi, I'm <span class="hl-red">Leonardo</span> Tononi.</h2>
           <p>
             I started my job carreer like online poker player, I have travelled
             around the world and I lived in Malta, Mexico, Australia and now I
@@ -104,21 +83,22 @@
             </a>
           </div>
         </div>
+
         <div class="skills hide">
-          <div class="banner-nav">
+          <div class="presentation__nav">
             <div
-              class="about-nav"
+              class="about__nav"
               style="color: #ffffff87"
               onclick="toggleNav()"
             >
               <h4>About</h4>
             </div>
             /
-            <div class="skills-nav" style="border-bottom: 1px solid white">
+            <div class="skills__nav" style="border-bottom: 1px solid #f8e9a1">
               <h4>Skills</h4>
             </div>
           </div>
-          <h2>What I know?</h2>
+          <h2>What I <span class="hl-red">know</span> ?</h2>
           <ul class="icons-skill">
             <li class="icon-skill">
               <i class="fab fa-html5"></i>
@@ -139,7 +119,7 @@
             <li class="icon-skill">
               <img
                 src="/image/firebase-white.png"
-                alt=""
+                alt="firebase logo"
                 style="width: 45px; cursor: pointer;"
               />
               <span>Firebase</span>
@@ -161,153 +141,108 @@
       </div>
     </section>
 
-    <section class="show-works">
-      <h2>My Recent Works</h2>
-      <p>Here a few recent projects.</p>
-      <div class="works">
-        <div class="work">
-          <div class="work-title">
-            <h4>#Bestfive</h4>
-          </div>
-          <div class="work-desc">
-            <p>
-              A tourism application <br />
-              built with JavaScript, PWA technology and Google Maps API.
-            </p>
-          </div>
-          <div class="work-link">
-            <a href="https://github.com/Easaaa/Bestfive-bcn" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://bestfivebcn.com" target="_blank">
-              <i class="fas fa-globe"></i> LiveLink
-            </a>
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-title">
-            <h4>#Books Manager</h4>
-          </div>
-          <div class="work-desc">
-            <p>
-              An app built with React, Firebase and Firestore to manage books.
-            </p>
-          </div>
-          <div class="work-link">
-            <a
-              href="https://easaaa.github.io/signIn-and-signUp"
-              target="_blank"
+    <section class="project">
+      <h2>Projects</h2>
+      <div class="project__container">
+        <div class="project__details">
+          <h3>HotelVittoria</h3>
+          <p>
+            <span class="hl-red">Redisigned</span>
+            an Hotel web site with several languages, a rooms finder built with
+            <span class="hl-red">JavaScript</span> and a contact form.
+          </p>
+          <div class="project__buttons">
+            <a href="https://github.com/Easaaa/HotelVittoria" target="_blank"
+              >Git Hub Code</a
             >
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://easaaa.github.io/Book-manager/" target="_blank">
-              <i class="fas fa-globe"></i> LiveLink
-            </a>
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-title">
-            <h4>#Food Recipes</h4>
-          </div>
-          <div class="work-desc">
-            <p>
-              A recipe finder application <br />
-              built with React.
-            </p>
-          </div>
-          <div class="work-link">
-            <a
-              href="https://github.com/Easaaa/recipe-finder-app"
-              target="_blank"
+            <a href="https://vittoriahotel.eu" target="_blank"
+              >See this project</a
             >
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a
-              href="https://easaaa.github.io/recipe-finder-app/"
-              target="_blank"
+          </div>
+        </div>
+        <div class="project__details">
+          <div>
+            <img class="project1_img" src="/image/vittoria-hotel.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project2">
+      <h2>WebApp</h2>
+      <div class="project__container">
+        <div class="project__details">
+          <h3>Bestfive</h3>
+          <p>
+            A tourism application built with JavaScript,
+            <span class="hl-yel">PWA technology</span> and
+            <span class="hl-yel">Google Maps API. </span>
+          </p>
+          <div class="project__buttons">
+            <a href="https://github.com/Easaaa/Bestfive-bcn" target="_blank"
+              >Git Hub Code</a
             >
-              <i class="fas fa-globe"></i> LiveLink
-            </a>
+            <a href="https://bestfivebcn.com" target="_blank"
+              >See this project</a
+            >
           </div>
         </div>
-        <div class="work">
-          <div class="work-title">
-            <h4>#Hotel Vittoria</h4>
-          </div>
-          <div class="work-desc">
-            <p>
-              An Hotel web site with a <br />
-              rooms finder built with JavaScript.
-            </p>
-          </div>
-          <div class="work-link">
-            <a href="https://github.com/Easaaa/HotelVittoria" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://vittoriahotel.eu" target="_blank">
-              <i class="fas fa-globe"></i> LiveLink
-            </a>
+        <div class="project__details">
+          <div>
+            <img class="project1_img" src="/image/bestfive-mock.png" alt="" />
           </div>
         </div>
-        <div class="work">
-          <div class="work-title">
-            <h4>#Coming soon</h4>
-          </div>
-          <div class="work-desc">
-            <p>
-              An E-commerce <br />
-              built with React.
-            </p>
-          </div>
-          <div class="work-link">
-            <!-- <a href="#" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank">
-              <i class="fas fa-globe"></i>
-            </a> -->
+      </div>
+    </section>
+
+    <section class="project3">
+      <h2>WebApp</h2>
+      <div class="project__container">
+        <div class="project__details">
+          <h3>Bestfive</h3>
+          <p>
+            A tourism application built with JavaScript,
+            <span class="hl-yel">PWA technology</span> and
+            <span class="hl-yel">Google Maps API. </span>
+          </p>
+          <div class="project__buttons">
+            <a href="https://github.com/Easaaa/Bestfive-bcn" target="_blank"
+              >Git Hub Code</a
+            >
+            <a href="https://bestfivebcn.com" target="_blank"
+              >See this project</a
+            >
           </div>
         </div>
-        <div class="work">
-          <div class="work-title">
-            <h4>#Reviews Form</h4>
-          </div>
-          <div class="work-desc">
-            <p>
-              A review form with a <br />
-              database interface built with EJS.
-            </p>
-          </div>
-          <div class="work-link">
-            <a href="https://github.com/Easaaa/review-form-bf" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <!-- <a href="#" target="_blank">
-              <i class="fas fa-globe"></i> LiveLink
-            </a> -->
+        <div class="project__details">
+          <div>
+            <img
+              class="project1_img"
+              src="/image/iphoneX-bestfive.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
 
     <section class="call-action">
-      <div class="col">
-        <h2>Hire 🤝 me</h2>
-      </div>
-      <div class="col">
-        <p>
-          Interested in working together? You should definitely send me an
-          email!
-        </p>
-      </div>
-      <div class="col">
-        <a href="mailto:leonardotononi@gmail.com"> <h2>Write 📮 me</h2></a>
-      </div>
+      <!-- <img class="arrow-down" src="/image/arrow-down.png" alt="" /> -->
+      <p id="question">
+        Interested in working together?
+      </p>
+      <p>Do you want see more of my projects ?</p>
+      <p>
+        <a href="mailto:leonardotononi@gmail.com">
+          E-MAIL
+        </a>
+        ME !
+      </p>
     </section>
 
     <footer>
       <div class="logo-footer">
-        <img src="/image/leonardo-sign-footer.png" alt="leonardo tononi sign" />
+        <img src="/image/logo-red.png" alt="leonardo tononi sign" />
       </div>
       <div class="philo-phrase">
         <p>
