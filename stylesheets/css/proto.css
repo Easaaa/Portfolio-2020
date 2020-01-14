@@ -106,12 +106,12 @@ footer {
 .socials {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   place-items: center;
   padding: 10px 0;
-  width: 33%;
+  width: 20%%;
   margin: 0 auto;
 }
 
@@ -167,12 +167,12 @@ footer {
 
   .socials {
     display: grid;
-    -ms-grid-columns: (1fr) [3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     place-items: center;
     padding: 10px 0;
-    width: 19%;
+    width: 18%;
     margin: 0 auto;
   }
 }
