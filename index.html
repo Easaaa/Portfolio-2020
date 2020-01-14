@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/stylesheets/css/main.css" />
+    <link rel="stylesheet" href="/stylesheets/css/proto.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -14,242 +14,34 @@
     <title>Leonard Tononi</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="/image/logo.png" alt="leonardo tononi sign" />
-      </div>
-
-      <div class="languges-container">
-        <div class="languages">
-          <div class="lang"><a href="/it/index.html">ITA</a></div>
-          <div class="lang selected"><a href="#">ENG</a></div>
-          <div class="lang"><a href="/es/index.html">ESP</a></div>
-        </div>
-        <div class="btn-lang">
-          Language
-        </div>
-      </div>
-    </nav>
-
-    <div class="email">
-      <p>leonardotononi@gmail.com</p>
-    </div>
-
     <header>
-      <img src="/image/header.png" alt="" />
-      <p>
-        I can <span class="hl-yel">solve</span> problems or I will die trying.
-      </p>
-      <a class="video-presentation">
-        Watch the presentation
-        <i class="far fa-play-circle"></i>
-      </a>
+      <div class="email">
+        <h1>leonardotononi@gmail.com</h1>
+      </div>
+      <div class="right-col">
+        <img src="/image/mobile-nerd.svg" alt="" />
+      </div>
+      <div class="left-col">
+        <h1>Full Stack Developer.</h1>
+        <p>
+          This is a temporary page, I'm working on a new website, write me if
+          you need more info about my works 👋.
+        </p>
+        <button>
+          <a href="mailto:leonardotononi@gmail.com">
+            Write Me
+          </a>
+        </button>
+      </div>
     </header>
 
-    <section class="presentation">
-      <div class="presentation__col">
-        <img
-          class="laptop-abstract"
-          src="/image/laptop.svg"
-          alt="laptop abstract"
-        />
-      </div>
-
-      <div class="presentation__col">
-        <div class="about">
-          <div class="presentation__nav">
-            <div class="about__nav" style="border-bottom: 1px solid #f8e9a1">
-              <h4>About</h4>
-            </div>
-            /
-            <div
-              class="skills__nav"
-              style="color: #ffffff87"
-              onclick="toggleNav()"
-            >
-              <h4>Skills</h4>
-            </div>
-          </div>
-          <h2>Hi, I'm <span class="hl-red">Leonardo</span> Tononi.</h2>
-          <p>
-            I started my job carreer like online poker player, I have travelled
-            around the world and I lived in Malta, Mexico, Australia and now I
-            found home in Barcelona. In the middle of 2018 I started to be
-            interest in blockchain and this brought me to study programming.
-          </p>
-          <div class="curriculum">
-            <a href="cv-leonardo-tononi.pdf" download>
-              <i class="fas fa-cloud-download-alt"></i>cv
-            </a>
-          </div>
-        </div>
-
-        <div class="skills hide">
-          <div class="presentation__nav">
-            <div
-              class="about__nav"
-              style="color: #ffffff87"
-              onclick="toggleNav()"
-            >
-              <h4>About</h4>
-            </div>
-            /
-            <div class="skills__nav" style="border-bottom: 1px solid #f8e9a1">
-              <h4>Skills</h4>
-            </div>
-          </div>
-          <h2>What I <span class="hl-red">know</span> ?</h2>
-          <ul class="icons-skill">
-            <li class="icon-skill">
-              <i class="fab fa-html5"></i>
-              <span>HTML5</span>
-            </li>
-            <li class="icon-skill">
-              <i class="fab fa-css3-alt"></i>
-              <span>CSS3</span>
-            </li>
-            <li class="icon-skill">
-              <i class="fab fa-js-square"></i>
-              <span>JavaScript</span>
-            </li>
-            <li class="icon-skill">
-              <i class="fab fa-react"></i>
-              <span>React.js</span>
-            </li>
-            <li class="icon-skill">
-              <img
-                src="/image/firebase-white.png"
-                alt="firebase logo"
-                style="width: 45px; cursor: pointer;"
-              />
-              <span>Firebase</span>
-            </li>
-            <li class="icon-skill">
-              <i class="fab fa-node-js"></i>
-              <span>Node.js</span>
-            </li>
-            <li class="icon-skill">
-              <i class="fab fa-sass"></i>
-              <span>Sass</span>
-            </li>
-            <li class="icon-skill">
-              <i class="fab fa-npm"></i>
-              <span>NPM</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="project">
-      <h2>Projects</h2>
-      <div class="project__container">
-        <div class="project__details">
-          <h3>HotelVittoria</h3>
-          <p>
-            <span class="hl-red">Redisigned</span>
-            an Hotel web site with several languages, a rooms finder built with
-            <span class="hl-red">JavaScript</span> and a contact form.
-          </p>
-          <div class="project__buttons">
-            <a href="https://github.com/Easaaa/HotelVittoria" target="_blank"
-              >Git Hub Code</a
-            >
-            <a href="https://vittoriahotel.eu" target="_blank"
-              >See this project</a
-            >
-          </div>
-        </div>
-        <div class="project__details">
-          <div>
-            <img class="project1_img" src="/image/vittoria-hotel.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="project2">
-      <h2>WebApp</h2>
-      <div class="project__container">
-        <div class="project__details">
-          <h3>Bestfive</h3>
-          <p>
-            A tourism application built with JavaScript,
-            <span class="hl-yel">PWA technology</span> and
-            <span class="hl-yel">Google Maps API. </span>
-          </p>
-          <div class="project__buttons">
-            <a href="https://github.com/Easaaa/Bestfive-bcn" target="_blank"
-              >Git Hub Code</a
-            >
-            <a href="https://bestfivebcn.com" target="_blank"
-              >See this project</a
-            >
-          </div>
-        </div>
-        <div class="project__details">
-          <div>
-            <img class="project1_img" src="/image/bestfive-mock.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="project3">
-      <h2>WebApp</h2>
-      <div class="project__container">
-        <div class="project__details">
-          <h3>Bestfive</h3>
-          <p>
-            A tourism application built with JavaScript,
-            <span class="hl-yel">PWA technology</span> and
-            <span class="hl-yel">Google Maps API. </span>
-          </p>
-          <div class="project__buttons">
-            <a href="https://github.com/Easaaa/Bestfive-bcn" target="_blank"
-              >Git Hub Code</a
-            >
-            <a href="https://bestfivebcn.com" target="_blank"
-              >See this project</a
-            >
-          </div>
-        </div>
-        <div class="project__details">
-          <div>
-            <img
-              class="project1_img"
-              src="/image/iphoneX-bestfive.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="call-action">
-      <!-- <img class="arrow-down" src="/image/arrow-down.png" alt="" /> -->
-      <p id="question">
-        Interested in working together?
-      </p>
-      <p>Do you want see more of my projects ?</p>
-      <p>
-        <a href="mailto:leonardotononi@gmail.com">
-          E-MAIL
-        </a>
-        ME !
-      </p>
-    </section>
-
     <footer>
-      <div class="logo-footer">
-        <img src="/image/logo-red.png" alt="leonardo tononi sign" />
-      </div>
-      <div class="philo-phrase">
+      <!--  <div class="philo-phrase">
         <p>
           "With great responsability come great power" <br />
           by Mark Manson.
         </p>
-      </div>
+      </div> -->
       <div class="socials">
         <div class="social">
           <a target="_blank" href="https://github.com/Easaaa"
@@ -269,11 +61,9 @@
           ></a>
         </div>
       </div>
-      <div class="copyright">
+      <!--  <div class="copyright">
         <p>Made by me with <i class="fas fa-brain"></i></p>
-      </div>
+      </div> -->
     </footer>
-
-    <script src="/app.js"></script>
   </body>
 </html>

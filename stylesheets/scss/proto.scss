@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: proxima-nova, sans-serif;
+  background-color: #0f0e17;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: grid;
+  color: #fffffe;
+  padding: 20px;
+
+  .email h1 {
+    font-size: 1rem;
+    text-align: end;
+    padding-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    color: rgb(167, 169, 190);
+  }
+}
+
+/* ======= FOOTER ======= */
+
+footer {
+  color: #ffffffd6;
+  text-align: center;
+  width: 100%;
+}
+
+.philo-phrase {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+}
+
+.copyright {
+  padding-top: 50px;
+}
+
+.copyright i {
+  color: red;
+}
+
+/* ====== SOCIALS ====== */
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  place-items: center;
+  padding-top: 30px;
+  width: 20%;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  i {
+    font-size: 2rem;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+/* ======= MEDIA QUERY ======= */
