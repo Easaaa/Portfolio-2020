@@ -82,10 +82,8 @@ header .left-col {
 /* ======= FOOTER ======= */
 footer {
   color: #ffffffd6;
-  text-align: center;
+  */ text-align: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .philo-phrase {
@@ -104,15 +102,14 @@ footer {
 
 /* ====== SOCIALS ====== */
 .socials {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr) [2];
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  place-items: center;
-  padding: 10px 0;
-  width: 20%%;
-  margin: 0 auto;
+  display: inline-flex;
+  padding: 10px 20px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.social {
+  margin: 0 20px;
 }
 
 .socials a {
@@ -165,14 +162,20 @@ footer {
     order-1
   }
 
-  .socials {
-    display: grid;
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    place-items: center;
-    padding: 10px 0;
-    width: 18%;
+  footer {
+    color: #ffffffd6;
+    */: ;
+    text-align: center;
+    position: fixed;
+    position: absolute;
+    bottom: 0;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  .socials {
+    padding: 10px 0;
+    display: inline-flex;
+    justify-content: center;
   }
 }
