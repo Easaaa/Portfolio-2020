@@ -4,61 +4,235 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/stylesheets/css/proto.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://kit.fontawesome.com/79ac4f678b.js"></script>
-    <title>Leonard Tononi</title>
+    <link rel="stylesheet" href="/stylesheets/css/main.css" />
+    <title>leonardotononi.com</title>
   </head>
   <body>
+    <!--  <nav>
+      <ul>
+        <li>
+          <img src="/assets/hamb.svg" alt="hamburger icon" class="hamb-img" />
+        </li>
+        <li class="hidden">Works</li>
+        <li class="hidden">Contact</li>
+      </ul>
+    </nav> -->
     <header>
-      <div class="email">
-        <h1>leonardotononi@gmail.com</h1>
-      </div>
-      <div class="right-col">
-        <img src="/image/mobile-nerd.svg" alt="" />
-      </div>
-      <div class="left-col">
-        <h1>Full Stack Developer.</h1>
-        <p>
-          This is a temporary page, I'm working on a new website, write me if
-          you need more info about my works 👋.
-        </p>
-        <button>
-          <a href="mailto:leonardotononi@gmail.com">
-            Write Me
-          </a>
-        </button>
+      <img
+        src="/assets/leo-black.png"
+        class="image-me-mobile"
+        alt="leonardo photo"
+      />
+      <div class="content-header">
+        <div class="text-header-col">
+          <h4>Full Stack Developer</h4>
+          <p class="sub-title">Hi there,</p>
+          <h1>
+            I'm Leonardo
+          </h1>
+          <p class="about-title">
+            I used to be a self thought poker player, that led me to live all
+            around <strong>the world</strong> and learn new languages. By the
+            end of 2018 I developed an interest in coding<strong>
+              and now I can't stop programming.</strong
+            >
+          </p>
+          <div class="socials-header">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/leonardo-tononi/"
+              ><img src="/assets/linkedin-with-circle.svg" alt="linkedin icon"
+            /></a>
+            <a target="_blank" href="https://github.com/Easaaa"
+              ><img src="/assets/github-filled.svg" alt="github icon"
+            /></a>
+          </div>
+        </div>
+        <img
+          src="/assets/leo-black.png"
+          class="image-me-desktop"
+          alt="leonardo photo"
+        />
       </div>
     </header>
-
-    <footer>
-      <!--  <div class="philo-phrase">
-        <p>
-          "With great responsability come great power" <br />
-          by Mark Manson.
-        </p>
-      </div> -->
-      <div class="socials">
-        <div class="social">
-          <a target="_blank" href="https://github.com/Easaaa"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-        <div class="social">
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/leonardo-tononi-361079173"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
+    <section class="works-section">
+      <h2>
+        What I've done recently
+      </h2>
+      <div class="work">
+        <img src="/assets/bestfive.png" alt="iphone mockup" class="iphone" />
+        <div class="work-details">
+          <p>
+            I created this web app with my girlfriend, born from a common idea.
+            It is essentially a pwa created without the need for additional
+            frameworks.
+          </p>
+          <ul class="lan-tag">
+            <li># JavaScript</li>
+            <li># PWA</li>
+            <li># Google Analytics</li>
+            <li># SEO</li>
+            <li style="width: 11rem;"># Google Maps API</li>
+          </ul>
+          <div class="project-links">
+            <a target="_blank" href="https://github.com/Easaaa/Bestfive-bcn"
+              ><img src="/assets/github.svg" alt="git hub icon"
+            /></a>
+            <a target="_blank" href="https://bestfivebcn.com"
+              ><img src="/assets/web.png" alt="world icon"
+            /></a>
+          </div>
         </div>
       </div>
-      <!--  <div class="copyright">
-        <p>Made by me with <i class="fas fa-brain"></i></p>
-      </div> -->
+      <div class="work odds">
+        <img
+          src="/assets/toureo-admin.png"
+          alt="laptop mockup"
+          class="desktop"
+        />
+        <div class="work-details">
+          <p>
+            After creating the first application and having hard coded the data,
+            clearly not the smartest thing, I thought of creating an
+            administration page from where I can create and manage the data from
+            the database and then pull it from the mobile web app.
+            <em
+              >If you want have a look you need the access, write me an
+              email.</em
+            >
+          </p>
+          <ul class="lan-tag">
+            <li># React.js</li>
+            <li style="width: 10rem;"># Firebase Auth</li>
+            <li># Firestore</li>
+          </ul>
+          <div class="project-links">
+            <a
+              target="_blank"
+              href="https://github.com/Easaaa/admin-app-bestfive"
+              ><img src="/assets/github.svg" alt="git hub icon"
+            /></a>
+            <a target="_blank" href="https://bestfivebcn.netlify.com/"
+              ><img src="/assets/web.png" alt="world icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <img
+          src="/assets/hotel-vittoria.png"
+          alt="laptop mockup"
+          class="desktop"
+        />
+        <div class="work-details">
+          <p>
+            This project was my first approach to programming. My father needed
+            a web page and I said to myself, why not try to do it myself? This
+            is not the first version created, in this
+            <a target="_blank" href="https://vittoriahotel.eu">link</a> you can
+            see the previous page and how my skills and tastes have evolved.
+          </p>
+          <ul class="lan-tag">
+            <li># Gatsby.js</li>
+            <li># Mobile View</li>
+            <li># Booking.com API</li>
+          </ul>
+          <div class="project-links">
+            <a
+              target="_blank"
+              href="https://github.com/Easaaa/hotel-vittoria-2020"
+              ><img src="/assets/github.svg" alt="git hub icon"
+            /></a>
+            <a target="_blank" href="https://hotelvittoria.netlify.com/"
+              ><img src="/assets/web.png" alt="world icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="work odds">
+        <img
+          src="/assets/books-manager.png"
+          alt="laptop mockup"
+          class="desktop"
+        />
+        <div class="work-details">
+          <p>
+            This is a simple project made with react redux to test my
+            understanding and the power of this stack.
+          </p>
+          <ul class="lan-tag">
+            <li># React.js</li>
+            <li># Redux</li>
+            <li># Firebase Auth</li>
+            <li># Google Books APIs</li>
+          </ul>
+          <div class="project-links">
+            <a target="_blank" href="https://github.com/Easaaa/Book-manager"
+              ><img src="/assets/github.svg" alt="git hub icon"
+            /></a>
+            <a target="_blank" href="https://books-manager.netlify.com/"
+              ><img src="/assets/web.png" alt="world icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <h2>
+        What I'm currently working on
+      </h2>
+      <div class="work">
+        <img
+          src="/assets/toureo-proto.png"
+          alt="iphone mockup"
+          class="iphone"
+        />
+        <div class="work-details">
+          <p>
+            I am recreating the first application (bestfive). The aim is to
+            create the application with React Native, building more complex
+            features, such as a more functional map, with filters and better
+            interactions.
+          </p>
+          <ul class="lan-tag">
+            <li># ReactNative</li>
+            <li># Firebase</li>
+          </ul>
+          <div class="project-links"></div>
+        </div>
+      </div>
+    </section>
+    <section class="skill-section">
+      <h2>
+        Skills
+      </h2>
+      <ul class="skills">
+        <li><img src="/assets/icon-skills/javascript.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/react.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/redux.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/gatsby.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/firebase.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/sass.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/html-5.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/css-3.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/logo-pwa.svg" alt="" /></li>
+        <li><img src="/assets/icon-skills/figma.svg" alt="" /></li>
+      </ul>
+    </section>
+    <footer>
+      <h2>How to contact me</h2>
+      <p>
+        I am available for freelancer jobs and to work in your company. If you
+        think I would be a good fit for you, send me an email.
+      </p>
+      <h5>leonardotononi@gmail.com</h5>
+      <a href="/CV ENG - 02:2020.pdf" download>Download resume</a>
+      <div class="social-links">
+        <a target="_blank" href="https://www.linkedin.com/in/leonardo-tononi/"
+          ><img src="/assets/linkedin-with-circle.svg" alt="linkedin icon"
+        /></a>
+        <a target="_blank" href="https://github.com/Easaaa"
+          ><img src="/assets/github-filled.svg" alt="github icon"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
