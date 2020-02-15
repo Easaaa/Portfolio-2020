@@ -176,6 +176,10 @@ header .image-me-desktop {
   padding: 5rem 1rem;
 }
 
+.works-section .work em {
+  font-weight: 100;
+}
+
 .works-section .work .project-links {
   padding: 1rem;
   display: -webkit-inline-box;
