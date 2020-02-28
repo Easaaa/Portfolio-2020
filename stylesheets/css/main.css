@@ -557,13 +557,13 @@ footer .social-links a {
             justify-content: flex-end;
     width: 100%;
   }
-  .about {
-    display: none;
-  }
   .skill-section {
     max-width: 1000px;
     background-color: #d7dce44a;
     margin: 0 auto;
+  }
+  .about {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
