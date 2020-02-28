@@ -37,9 +37,9 @@ ul li {
 }
 
 h2 {
-  font-size: 1.8rem;
   color: #3f3d56;
   font-weight: 900;
+  padding: 2rem 1rem;
   position: relative;
   font-family: "Playfair Display", serif;
   letter-spacing: 1.6px;
@@ -50,7 +50,7 @@ h2 {
     height: 5px;
     background-color: #618ee9;
     border-radius: 50%;
-    bottom: 0;
+    bottom: 2.4rem;
     position: absolute;
   }
 }
@@ -59,16 +59,36 @@ a {
   cursor: pointer;
 }
 
+// NAV
+
+nav {
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+
+  .hamb-img {
+    cursor: pointer;
+  }
+
+  ul {
+    text-align: end;
+
+    li {
+      margin: 10px;
+      text-transform: uppercase;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}
+
 // HEADER
 
 header {
   width: 100%;
-  padding: 1rem 0;
-  height: 100vh;
-
-  .actions-desktop {
-    display: none
-  }
+  padding: 1rem 0 4rem 0;
 
   .actions {
     padding: 0 1rem;
@@ -82,7 +102,7 @@ header {
     }
 
     .resume-btn {
-      padding-top: 4px;
+      padding-top: 10px;
 
       a {
         background-color: #5687E8;
@@ -91,39 +111,21 @@ header {
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-        transition: background-color 150ms ease-in-out;
-
-        &:hover {
-          background-color: #4670c5;
-        }
       }
     }
   }
 
   .content-header {
-    padding: 3rem 0;
+    background-color: #d7dce44a;
+    padding-bottom: 3rem;
     border-radius: 5px;
-    height: 450px;
-    top: 50%;
-    position: relative;
-    margin-top: -225px;
-
-    .sub-title {
-      font-size: 1.2rem;
-      padding: 0 2rem;
-    }
-
-    .about-title-desktop {
-      display: none;
-    }
   }
 
   h1 {
     color: #3f3d56;
-    font-size: 2.5rem;
     text-align: end;
     font-weight: 900;
-    padding: 0 2rem;
+    margin: 0 1rem 1rem 1rem;
     position: relative;
 
     &:after {
@@ -141,18 +143,16 @@ header {
     color: #3f3d56a1;
     padding: 1rem 2rem;
     font-size: 1.7rem;
-    text-align: end;
-    color: #618EE9;
+    text-align: center;
+    font-family: "Playfair Display", serif;
   }
 
   p {
-    color: #484848;
+    color: #61626d;
     text-align: end;
     font-weight: 400;
-    font-size: 1.7rem;
-    padding: 1rem 2rem;
+    margin: 0 1rem 0 auto;
     line-height: 2.5rem;
-    margin: 0;
   }
 
   .socials-header {
@@ -163,7 +163,9 @@ header {
     }
   }
 
-
+  .about-title {
+    max-width: 300px;
+  }
 
   .image-me-desktop,
   .image-me-mobile {
@@ -182,7 +184,7 @@ header {
 .works-section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem;
 
   img {
     width: 100%;
@@ -198,14 +200,14 @@ header {
   }
 
   .work {
-    padding: 5rem 0;
+    padding: 5rem 1rem;
 
     em {
       font-weight: 100;
     }
 
     .project-links {
-      padding: 1rem 0;
+      padding: 1rem;
       display: inline-flex;
 
       a {
@@ -232,9 +234,9 @@ header {
 
   p {
     color: #61626d;
-    padding: 1.3rem 0;
+    font-weight: bold;
+    padding: 1.3rem;
     line-height: 35px;
-    font-size: 1.3rem;
 
     a {
       color: #5687e8;
@@ -242,14 +244,14 @@ header {
   }
 
   .lan-tag {
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 
     li {
-      padding: 0.5rem;
-      font-size: 1.3rem;
+      padding: 0.3rem 0.6rem;
+      margin: 10px;
       text-align: center;
       border-radius: 40px;
     }
@@ -280,11 +282,7 @@ header {
 // SKILLS
 
 .skill-section {
-  padding: 5rem 2rem;
-
-  h2 {
-    margin-bottom: 2rem;
-  }
+  padding: 5rem 1rem;
 
   .skills {
     display: flex;
@@ -306,11 +304,7 @@ header {
 // FOOTER
 
 footer {
-  padding: 2rem;
-
-  h2 {
-    margin-bottom: 2rem;
-  }
+  padding: 1rem;
 
   p {
     color: #61626d;
@@ -318,7 +312,6 @@ footer {
     font-weight: 400;
     line-height: 2.5rem;
     padding-bottom: 2rem;
-    font-size: 1.3rem;
   }
 
   h5 {
@@ -335,11 +328,11 @@ footer {
   .social-links {
     padding: 2rem 0;
     width: 100%;
-    text-align: start;
+    text-align: end;
 
     img {
       width: 30px;
-      margin-right: 10px;
+      margin: 0 10px;
       color: #3f3d56;
     }
 
@@ -356,8 +349,21 @@ footer {
   }
 
   header {
-    max-width: 750px;
-    margin: 0 auto;
+    padding: 4rem 0;
+
+    h4,
+    p,
+    h1 {
+      padding-right: 4rem;
+    }
+
+    h4 {
+      font-size: 3rem;
+    }
+
+    .about-title {
+      max-width: 500px;
+    }
   }
 
   .works-section {
@@ -371,7 +377,14 @@ footer {
       padding: 10rem 0;
 
       p {
+        padding: 2rem;
         line-height: 3rem;
+      }
+
+      .lan-tag {
+        li {
+          font-size: 1.1rem;
+        }
       }
     }
 
@@ -381,7 +394,7 @@ footer {
   }
 
   .skill-section {
-    padding: 5rem 2rem;
+    padding: 5rem;
 
     .skills li img {
       width: 50px;
@@ -389,127 +402,100 @@ footer {
   }
 
   footer {
-    padding: 12rem 2rem;
-
-    max-width: 1000px;
-    margin: 0 auto;
-
+    padding: 12rem 5rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
+  h2 {
+    &:after {
+      bottom: 2.5rem;
+      width: 8px;
+      height: 8px;
+    }
+  }
 
-  header {
-    max-width: 1000px;
-    padding: 4rem 0;
+  nav {
+    position: initial;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
 
-    .actions {
+    .hamb-img {
       display: none;
     }
 
-    .actions-desktop {
-      padding: 0 1rem;
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-
-      img {
-        margin: 0 5px;
-        width: 30px;
-        transition: transform 50ms ease-in;
-      }
-
-      .socials {
-        padding-right: 2rem;
-
-        img:hover {
-          transform: scale(1.1);
-        }
-      }
-
-      .resume-btn {
-        padding-top: 4px;
-
-        a {
-          background-color: #5687E8;
-          padding: 5px 10px;
-          border-radius: 10px;
-          color: #fff;
-          text-decoration: none;
-          text-transform: uppercase;
-          transition: background-color 150ms ease-in-out;
-
-          &:hover {
-            background-color: #4670c5;
-          }
-        }
-      }
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-
-    h4 {
-      font-size: 2rem;
-      font-weight: 400;
-      width: 800px;
-      letter-spacing: 1.3px;
+    ul {
       text-align: center;
-      position: fixed;
-      left: 50%;
-      z-index: 3;
-      font-family: "Playfair Display", serif;
-      background: transparent;
-      top: 10px;
-      margin-left: -400px;
-      border-radius: 5px;
-      color: #3f3d56;
-    }
 
-    p {
-      font-size: 1.5rem;
-    }
+      li {
+        margin: 10px 30px;
+        cursor: pointer;
+        color: #3f3d56;
+        font-weight: bold;
+      }
 
-    .content-header {
-      padding: 3rem 0;
-      border-radius: 5px;
-      height: 600px;
-      top: 50%;
-      position: relative;
-      margin-top: -300px;
-      background: #eef4ff;
-
-      .about-title-desktop {
+      .hidden {
         display: inline-block;
-        padding: 4rem 2rem;
-        margin-left: 300px;
-      }
-
-      .about-title {
-        display: none;
-      }
-
-      .image-me-desktop {
-        display: inline-block;
-        position: absolute;
-        bottom: 100px;
-        left: -180px;
-        box-shadow: 8px 6px 0px 5px #5687e80f, -3px -3px 9px 10px #5687e812;
-        background: #ffffff;
-        border-radius: 5px;
       }
     }
-
-
   }
-
 
   .image-me-mobile {
     display: none;
   }
 
+  header {
+    margin: 12em 0;
+    padding: 0;
+    position: relative;
 
+    img {
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      left: 130px;
+    }
+
+    h4 {
+      font-size: 7rem;
+      position: absolute;
+      transform: rotate(-90deg);
+      left: -450px;
+      top: 38%;
+      color: #3f3d5630;
+    }
+
+    .content-header {
+      padding: 0;
+      height: 700px;
+      max-width: 1300px;
+      margin: 0 0 0 auto;
+    }
+
+    .image-me-desktop {
+      display: inline-block;
+    }
+
+    .text-header-col {
+      padding: 5em 0;
+
+      .socials-header {
+        display: none;
+      }
+
+      h1 {
+        padding: 0 4rem 2rem 0;
+        font-size: 3.2rem;
+
+        &:after {
+          bottom: 2.8rem;
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
 
   .works-section {
     padding: 12rem 5rem;
@@ -547,10 +533,29 @@ footer {
   }
 
   .skill-section {
-    max-width: 1000px;
+    max-width: 1200px;
     background-color: #d7dce44a;
-    margin: 0 auto;
   }
 
+  footer {
+    max-width: 1100px;
+    margin: 0 auto 0 0;
+  }
+}
 
+@media only screen and (min-width: 1500px) {
+  header img {
+    left: initial;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  header {
+    max-width: 2000px;
+    margin: 12em auto 0 auto;
+
+    img {
+      left: 25rem;
+    }
+  }
 }
