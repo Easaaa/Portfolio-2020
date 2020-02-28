@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/79ac4f678b.js"></script>
+    <title>Leonardo Tononi</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/image/leonardo-sign.png" alt="leonardo tononi sign" />
+      </div>
+
+      <div class="languages">
+        <div class="all-lang">
+          <div class="lang selected"><a href="#">ITA</a></div>
+          <div class="lang"><a href="/index.html">ENG</a></div>
+          <div class="lang"><a href="/es/index.html">ESP</a></div>
+        </div>
+        <div class="icon-lang">
+          <i class="fas fa-globe"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <header>
+      <h1>Nerd, Full Stack Developer</h1>
+      <p>Amo risolvere problemi.</p>
+      <div>
+        <img
+          class="personal-emoji"
+          src="/image/leo-bear.jpg"
+          alt="emoji of leonardo tononi"
+        />
+      </div>
+    </header>
+
+    <section class="middle-banner">
+      <div class="col">
+        <div class="header-bg-div">
+          <img
+            class="header-bg"
+            src="/image/header-bg.png"
+            alt="https://icons8.com"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="about">
+          <div class="banner-nav">
+            <div class="about-nav" style="border-bottom: 1px solid white">
+              <h4>Storia</h4>
+            </div>
+            /
+            <div
+              class="skills-nav"
+              style="color: #ffffff87"
+              onclick="toggleNav()"
+            >
+              <h4>Abilità</h4>
+            </div>
+          </div>
+          <h2>Ciao, mi chiamo Leonardo Tononi.</h2>
+          <p>
+            Ho iniziato la mia carriera lavorativa come giocatore professionista
+            di poker (online), ho viaggiato in molte parti del mondo e ho
+            vissuto in Malta, Messico, Asutralia e da qualche mese ho trovato
+            casa in Barcellona. Verso la metà del 2018 ho iniziato a
+            interessarmi in blockchain e siccome non ci capivo molto ho
+            preferito studiare le basi: programmazione.
+          </p>
+          <div class="curriculum">
+            <a href="#"> <i class="fas fa-cloud-download-alt"></i>cv </a>
+          </div>
+        </div>
+        <div class="skills hide">
+          <div class="banner-nav">
+            <div
+              class="about-nav"
+              style="color: #ffffff87"
+              onclick="toggleNav()"
+            >
+              <h4>Storia</h4>
+            </div>
+            /
+            <div class="skills-nav" style="border-bottom: 1px solid white">
+              <h4>Abilità</h4>
+            </div>
+          </div>
+          <h2>What I know?</h2>
+          <ul class="icons-skill">
+            <li class="icon-skill">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </li>
+            <li class="icon-skill">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </li>
+            <li class="icon-skill">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+            </li>
+            <li class="icon-skill">
+              <i class="fab fa-react"></i>
+              <span>React.js</span>
+            </li>
+            <li class="icon-skill">
+              <img
+                src="/image/firebase-white.png"
+                alt=""
+                style="width: 45px; cursor: pointer;"
+              />
+              <span>Firebase</span>
+            </li>
+            <li class="icon-skill">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </li>
+            <li class="icon-skill">
+              <i class="fab fa-sass"></i>
+              <span>Sass</span>
+            </li>
+            <li class="icon-skill">
+              <i class="fab fa-npm"></i>
+              <span>NPM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="show-works">
+      <h2>I Miei Lavori</h2>
+      <p>Questi sono alcuni dei più recenti lavori.</p>
+      <div class="works">
+        <div class="work">
+          <div class="work-title">
+            <h4>#Bestfive</h4>
+          </div>
+          <div class="work-desc">
+            <p>
+              Un' applicazione turistica<br />
+              costruita con JavaScript, l'utilizzo del service worker (PWA) e
+              Google Maps API.
+            </p>
+          </div>
+          <div class="work-link">
+            <a href="https://github.com/Easaaa/Bestfive-bcn" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://bestfivebcn.com" target="_blank">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-title">
+            <h4>#Books Manager</h4>
+          </div>
+          <div class="work-desc">
+            <p>
+              Un'applicazione creata con React, Firebase e Firestore per gestire
+              la tua libreria.
+            </p>
+          </div>
+          <div class="work-link">
+            <a
+              href="https://easaaa.github.io/signIn-and-signUp"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://easaaa.github.io/Book-manager/" target="_blank">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-title">
+            <h4>#Cercatore di Ricette</h4>
+          </div>
+          <div class="work-desc">
+            <p>
+              Un app per trovare ricette <br />
+              costruita con React.
+            </p>
+          </div>
+          <div class="work-link">
+            <a
+              href="https://github.com/Easaaa/recipe-finder-app"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://easaaa.github.io/recipe-finder-app/"
+              target="_blank"
+            >
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-title">
+            <h4>#Hotel Vittoria</h4>
+          </div>
+          <div class="work-desc">
+            <p>
+              Sito web di un Hotel creato con HTML, CSS e un pizzico di JS.
+            </p>
+          </div>
+          <div class="work-link">
+            <a href="https://github.com/Easaaa/HotelVittoria" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://vittoriahotel.eu" target="_blank">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-title">
+            <h4>#Coming soon</h4>
+          </div>
+          <div class="work-desc">
+            <p>
+              Un e-commerce costruito con React.
+            </p>
+          </div>
+          <div class="work-link">
+            <!-- <a href="#" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fas fa-globe"></i>
+            </a> -->
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-title">
+            <h4>#App recensioni</h4>
+          </div>
+          <div class="work-desc">
+            <p>
+              Un modulo utile per recensire luoghi o ristoranti con un database
+              connesso costrutito con JS e EJS.
+            </p>
+          </div>
+          <div class="work-link">
+            <a href="https://github.com/Easaaa/review-form-bf" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <!-- <a href="#" target="_blank">
+              <i class="fas fa-globe"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-action">
+      <div class="col">
+        <h2>Contrattami</h2>
+      </div>
+      <div class="col">
+        <p>
+          Interessato/a a lavorare insieme? Dovresti decisamente scrivermi un
+          email!
+        </p>
+      </div>
+      <div class="col">
+        <a href="mailto:leonardotononi@gmail.com"
+          ><i class="fab fa-telegram-plane"></i>Scrivimi</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo-footer">
+        <img src="/image/leonardo-sign-footer.png" alt="leonardo tononi sign" />
+      </div>
+      <div class="philo-phrase">
+        <p>
+          "Da grandi responsabilità si creano grandi poteri" <br />
+          Mark Manson.
+        </p>
+      </div>
+      <div class="socials">
+        <div class="social">
+          <a target="_blank" href="https://github.com/Easaaa"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </div>
+        <div class="social">
+          <a target="_blank" href="https://www.facebook.com/leonardo.tononi">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+        <div class="social">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/leonardo-tononi-361079173"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Fatto da me con <i class="fas fa-brain"></i></p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
