@@ -579,26 +579,3 @@ footer {
     display: none;
   }
 }
-
-@media only screen and (min-width: 1500px) {
-  header {
-    max-width: 1300px;
-
-    .content-header {
-      height: 700px;
-      top: 50%;
-
-      .about-title-desktop {
-        margin-left: 500px;
-      }
-
-      .image-me-desktop {
-        bottom: 200px;
-      }
-    }
-
-    .actions-desktop {
-      padding: 2rem 1rem;
-    }
-  }
-}

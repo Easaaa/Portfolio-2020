@@ -88,7 +88,7 @@ header .actions .resume-btn {
 }
 
 header .actions .resume-btn a {
-  background-color: #5687E8;
+  background-color: #5687e8;
   padding: 5px 10px;
   border-radius: 10px;
   color: #fff;
@@ -144,7 +144,7 @@ header h4 {
   padding: 1rem 2rem;
   font-size: 1.7rem;
   text-align: end;
-  color: #618EE9;
+  color: #618ee9;
 }
 
 header p {
@@ -457,8 +457,8 @@ footer .social-links a {
     padding-top: 4px;
   }
   header .actions-desktop .resume-btn a {
-    background-color: #5687E8;
-    padding: 5px 10px;
+    background-color: #5687e8;
+    padding: 8px 12px;
     border-radius: 10px;
     color: #fff;
     text-decoration: none;
@@ -471,6 +471,11 @@ footer .social-links a {
   }
   header h1 {
     font-size: 4rem;
+  }
+  header h1:after {
+    width: 10px;
+    height: 10px;
+    bottom: 1.1rem;
   }
   header h4 {
     font-size: 2rem;
@@ -495,7 +500,7 @@ footer .social-links a {
     padding: 3rem 0;
     border-radius: 5px;
     height: 600px;
-    top: 50%;
+    top: 55%;
     position: relative;
     margin-top: -300px;
     background: #eef4ff;
@@ -513,8 +518,8 @@ footer .social-links a {
     position: absolute;
     bottom: 100px;
     left: -180px;
-    -webkit-box-shadow: 8px 6px 0px 5px #5687e80f, -3px -3px 9px 10px #5687e812;
-            box-shadow: 8px 6px 0px 5px #5687e80f, -3px -3px 9px 10px #5687e812;
+    -webkit-box-shadow: 0px 0px 20px 20px #d7d7d72e;
+            box-shadow: 0px 0px 20px 20px #d7d7d72e;
     background: #ffffff;
     border-radius: 5px;
   }
@@ -564,6 +569,25 @@ footer .social-links a {
   }
   .about {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  header {
+    max-width: 1300px;
+  }
+  header .content-header {
+    height: 700px;
+    top: 50%;
+  }
+  header .content-header .about-title-desktop {
+    margin-left: 500px;
+  }
+  header .content-header .image-me-desktop {
+    bottom: 200px;
+  }
+  header .actions-desktop {
+    padding: 2rem 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

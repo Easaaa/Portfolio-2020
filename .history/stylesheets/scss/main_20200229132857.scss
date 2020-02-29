@@ -470,12 +470,6 @@ footer {
 
     h1 {
       font-size: 4rem;
-
-      &:after {
-        width: 10px;
-        height: 10px;
-        bottom: 1.1rem;
-      }
     }
 
     h4 {
@@ -503,7 +497,7 @@ footer {
       padding: 3rem 0;
       border-radius: 5px;
       height: 600px;
-      top: 55%;
+      top: 50%;
       position: relative;
       margin-top: -300px;
       background: #eef4ff;
@@ -577,28 +571,5 @@ footer {
 
   .about {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  header {
-    max-width: 1300px;
-
-    .content-header {
-      height: 700px;
-      top: 50%;
-
-      .about-title-desktop {
-        margin-left: 500px;
-      }
-
-      .image-me-desktop {
-        bottom: 200px;
-      }
-    }
-
-    .actions-desktop {
-      padding: 2rem 1rem;
-    }
   }
 }
